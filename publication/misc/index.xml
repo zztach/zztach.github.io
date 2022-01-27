@@ -7,26 +7,26 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>misc on Zisis Tachtsidis</title>
-    <link>https://zisistach.org:8083/publication/misc/</link>
+    <link>https://zisistach.org/publication/misc/</link>
     <description>Recent content in misc on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
+    <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
     
-        <atom:link href="https://zisistach.org:8083/publication/misc/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org/publication/misc/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Book Review: Duis vulputate</title>
-        <link>https://zisistach.org:8083/publication/misc/misc_any_folder_name_1/</link>
+        <link>https://zisistach.org/publication/misc/misc_any_folder_name_1/</link>
         <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Tue, 01 Nov 2016 00:00:00 +0000</atom:modified>
-        <guid>https://zisistach.org:8083/publication/misc/misc_any_folder_name_1/</guid>
+        <guid>https://zisistach.org/publication/misc/misc_any_folder_name_1/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

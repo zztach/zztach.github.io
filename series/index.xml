@@ -7,26 +7,26 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Series on Zisis Tachtsidis</title>
-    <link>https://zisistach.org:8083/series/</link>
+    <link>https://zisistach.org/series/</link>
     <description>Recent content in Series on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
-    <copyright>©2021, All Rights Reserved</copyright>
+    <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org:8083/series/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org/series/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Software</title>
-        <link>https://zisistach.org:8083/series/software/</link>
+        <link>https://zisistach.org/series/software/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/series/software/</guid>
+        <guid>https://zisistach.org/series/software/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

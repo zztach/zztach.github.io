@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>aop on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/tags/aop/</link>
+    <link>https://zisistach.org:8083/tags/aop/</link>
     <description>Recent content in aop on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,22 +16,22 @@
     <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 14 Sep 2011 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org/tags/aop/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org:8083/tags/aop/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Spring AOP &amp; Bean Naming. Is it a bug?</title>
-        <link>https://zisistach.org/posts/01_spring-aop-bug/</link>
+        <link>https://zisistach.org:8083/posts/01_spring-aop-bug/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Wed, 14 Sep 2011 12:00:06 +0900</atom:modified>
-        <guid>https://zisistach.org/posts/01_spring-aop-bug/</guid>
+        <guid>https://zisistach.org:8083/posts/01_spring-aop-bug/</guid>
         <description>Spring aop fun! My everyday life at work involves dealing with several Java frameworks such as Spring, Hibernate and JSF amongst others. Some of them are quite easy to grasp while others have a steeper learning curve (Hibernate raises its hand here), especially when it comes to making it performant.
 Lately, I’ve been trying to extend the use of AOP in our project and use it for a quite common purpose, to measure the performance of our app.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.orgimages/article-icons/1-bug.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zisistach.org:8083images/article-icons/1-bug.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

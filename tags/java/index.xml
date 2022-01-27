@@ -7,30 +7,71 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>java on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/tags/java/</link>
+    <link>https://zisistach.org:8083/tags/java/</link>
     <description>Recent content in java on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jan 2022 21:45:06 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org/tags/java/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org:8083/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
+        <title>Java concurrency - Stability</title>
+        <link>https://zisistach.org:8083/posts/04_be_gentle_to_interruptions/</link>
+        <pubDate>Wed, 26 Jan 2022 21:45:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Wed, 26 Jan 2022 21:45:06 +0900</atom:modified>
+        <guid>https://zisistach.org:8083/posts/04_be_gentle_to_interruptions/</guid>
+        <description>Introduction We are so spoiled by Java&amp;rsquo;s concurrency utilities that it&amp;rsquo;s easy to ignore some basic error handling like what happens when some of the threads we have created &amp;ldquo;go wild&amp;rdquo;.
+It&amp;rsquo;s like getting on a fast motorcycle for the first time. Thrilled by the idea of speed you roll on the throttle reaching &amp;gt;200Km/h in no time but then a car crops up out of nowhere. It&amp;rsquo;s only then that you realize you have no idea how to apply the brakes.</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://zisistach.org:8083images/article-icons/1-stability.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>java</category>
+            
+          
+            
+              <category>concurrency</category>
+            
+          
+        
+        
+          
+            
+              <category>Robustness</category>
+            
+          
+        
+        
+          
+            
+              <category>Software</category>
+            
+          
+        
+      </item>
+      
+      <item>
         <title>SolrCloud performance tuning</title>
-        <link>https://zisistach.org/posts/03_solr_performance/</link>
+        <link>https://zisistach.org:8083/posts/03_solr_performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Sun, 11 Mar 2018 12:00:06 +0900</atom:modified>
-        <guid>https://zisistach.org/posts/03_solr_performance/</guid>
+        <guid>https://zisistach.org:8083/posts/03_solr_performance/</guid>
         <description>Introduction Most of the recommendations presented below are coming directly from the web (StackOverflow, Solr wiki, Solr Jira, Solr mailing list), while some others required a lot of testing and debugging in order to understand them and reach a solution. It’s also nowhere complete but I hope it can give some directions to people facing performance issues with Solr. In this post we’ll focus on SolrCloud stability and search performance. There are even more Solr performance related storied to tell.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.orgimages/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zisistach.org:8083images/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

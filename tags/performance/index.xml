@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>performance on Zisis Tachtsidis</title>
+    <link>https://zisistach.org:8083/tags/performance/</link>
+    <description>Recent content in performance on Zisis Tachtsidis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
+    <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://zisistach.org:8083/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>SolrCloud performance tuning</title>
+        <link>https://zisistach.org:8083/posts/03_solr_performance/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Sun, 11 Mar 2018 12:00:06 +0900</atom:modified>
+        <guid>https://zisistach.org:8083/posts/03_solr_performance/</guid>
+        <description>Introduction Most of the recommendations presented below are coming directly from the web (StackOverflow, Solr wiki, Solr Jira, Solr mailing list), while some others required a lot of testing and debugging in order to understand them and reach a solution. It’s also nowhere complete but I hope it can give some directions to people facing performance issues with Solr. In this post we’ll focus on SolrCloud stability and search performance. There are even more Solr performance related storied to tell.</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://zisistach.org:8083images/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>solrcloud</category>
+            
+          
+            
+              <category>lucene</category>
+            
+          
+            
+              <category>java</category>
+            
+          
+            
+              <category>performance</category>
+            
+          
+        
+        
+          
+            
+              <category>Performance</category>
+            
+          
+        
+        
+          
+            
+              <category>Software</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

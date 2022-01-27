@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Tags on Zisis Tachtsidis</title>
+    <link>https://zisistach.org:8083/tags/</link>
+    <description>Recent content in Tags on Zisis Tachtsidis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
+    <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://zisistach.org:8083/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>java</title>
+        <link>https://zisistach.org:8083/tags/java/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/java/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>lucene</title>
+        <link>https://zisistach.org:8083/tags/lucene/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/lucene/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>performance</title>
+        <link>https://zisistach.org:8083/tags/performance/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/performance/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>solrcloud</title>
+        <link>https://zisistach.org:8083/tags/solrcloud/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/solrcloud/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>c&#43;&#43;</title>
+        <link>https://zisistach.org:8083/tags/c&#43;&#43;/</link>
+        <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/c&#43;&#43;/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>mac</title>
+        <link>https://zisistach.org:8083/tags/mac/</link>
+        <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/mac/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>opengl</title>
+        <link>https://zisistach.org:8083/tags/opengl/</link>
+        <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/opengl/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>aop</title>
+        <link>https://zisistach.org:8083/tags/aop/</link>
+        <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/aop/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>spring</title>
+        <link>https://zisistach.org:8083/tags/spring/</link>
+        <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/spring/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>index</title>
+        <link>https://zisistach.org:8083/tags/index/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/tags/index/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Interesting Bug on Zisis Tachtsidis</title>
+    <link>https://zisistach.org:8083/categories/interesting-bug/</link>
+    <description>Recent content in Interesting Bug on Zisis Tachtsidis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
+    <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 14 Sep 2011 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://zisistach.org:8083/categories/interesting-bug/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Spring AOP &amp; Bean Naming. Is it a bug?</title>
+        <link>https://zisistach.org:8083/posts/01_spring-aop-bug/</link>
+        <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Wed, 14 Sep 2011 12:00:06 +0900</atom:modified>
+        <guid>https://zisistach.org:8083/posts/01_spring-aop-bug/</guid>
+        <description>Spring aop fun! My everyday life at work involves dealing with several Java frameworks such as Spring, Hibernate and JSF amongst others. Some of them are quite easy to grasp while others have a steeper learning curve (Hibernate raises its hand here), especially when it comes to making it performant.
+Lately, I’ve been trying to extend the use of AOP in our project and use it for a quite common purpose, to measure the performance of our app.</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://zisistach.org:8083images/article-icons/1-bug.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>spring</category>
+            
+          
+            
+              <category>aop</category>
+            
+          
+        
+        
+          
+            
+              <category>Interesting Bug</category>
+            
+          
+        
+        
+          
+            
+              <category>Software</category>
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

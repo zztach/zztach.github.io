@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Series on Zisis Tachtsidis</title>
+    <link>https://zisistach.org:8083/series/</link>
+    <description>Recent content in Series on Zisis Tachtsidis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
+    <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
+    
+        <atom:link href="https://zisistach.org:8083/series/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Software</title>
+        <link>https://zisistach.org:8083/series/software/</link>
+        <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        
+        <guid>https://zisistach.org:8083/series/software/</guid>
+        <description></description>
+        
+        <dc:creator>Zisis Tachtsidis</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -2,114 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zisistach.org:8083/showcase/android/android-cyclades/</loc>
+    <loc>https://zisistach.org/showcase/android/android-cyclades/</loc>
     <lastmod>2020-01-19T21:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/</loc>
+    <loc>https://zisistach.org/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/categories/</loc>
+    <loc>https://zisistach.org/categories/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/concurrency/</loc>
+    <loc>https://zisistach.org/tags/concurrency/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/java/</loc>
+    <loc>https://zisistach.org/tags/java/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/posts/04_be_gentle_to_interruptions/</loc>
+    <loc>https://zisistach.org/posts/04_be_gentle_to_interruptions/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/posts/</loc>
+    <loc>https://zisistach.org/posts/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/categories/robustness/</loc>
+    <loc>https://zisistach.org/categories/robustness/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/series/</loc>
+    <loc>https://zisistach.org/series/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/series/software/</loc>
+    <loc>https://zisistach.org/series/software/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/</loc>
+    <loc>https://zisistach.org/tags/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/article/</loc>
+    <loc>https://zisistach.org/publication/article/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/book/</loc>
+    <loc>https://zisistach.org/publication/book/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/misc/</loc>
+    <loc>https://zisistach.org/publication/misc/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/</loc>
+    <loc>https://zisistach.org/publication/</loc>
     <lastmod>2020-03-05T14:08:48+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/showcase/android/</loc>
+    <loc>https://zisistach.org/showcase/android/</loc>
     <lastmod>2020-01-19T21:04:11+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/showcase/</loc>
+    <loc>https://zisistach.org/showcase/</loc>
     <lastmod>2020-01-19T15:43:38+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/archive/</loc>
+    <loc>https://zisistach.org/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/about/</loc>
+    <loc>https://zisistach.org/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/article/article_any_folder_name_1/</loc>
+    <loc>https://zisistach.org/publication/article/article_any_folder_name_1/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/lucene/</loc>
+    <loc>https://zisistach.org/tags/lucene/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/categories/performance/</loc>
+    <loc>https://zisistach.org/categories/performance/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/performance/</loc>
+    <loc>https://zisistach.org/tags/performance/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/solrcloud/</loc>
+    <loc>https://zisistach.org/tags/solrcloud/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/posts/03_solr_performance/</loc>
+    <loc>https://zisistach.org/posts/03_solr_performance/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/book/book_any_folder_name_1/</loc>
+    <loc>https://zisistach.org/publication/book/book_any_folder_name_1/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/publication/misc/misc_any_folder_name_1/</loc>
+    <loc>https://zisistach.org/publication/misc/misc_any_folder_name_1/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/c&#43;&#43;/</loc>
+    <loc>https://zisistach.org/tags/c&#43;&#43;/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/mac/</loc>
+    <loc>https://zisistach.org/tags/mac/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/posts/02_mac_opengl/</loc>
+    <loc>https://zisistach.org/posts/02_mac_opengl/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/opengl/</loc>
+    <loc>https://zisistach.org/tags/opengl/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/categories/setup/</loc>
+    <loc>https://zisistach.org/categories/setup/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/aop/</loc>
+    <loc>https://zisistach.org/tags/aop/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/categories/interesting-bug/</loc>
+    <loc>https://zisistach.org/categories/interesting-bug/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/spring/</loc>
+    <loc>https://zisistach.org/tags/spring/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/posts/01_spring-aop-bug/</loc>
+    <loc>https://zisistach.org/posts/01_spring-aop-bug/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://zisistach.org:8083/tags/index/</loc>
+    <loc>https://zisistach.org/tags/index/</loc>
   </url>
 </urlset>

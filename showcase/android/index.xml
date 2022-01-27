@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Android on Zisis Tachtsidis</title>
-    <link>https://zisistach.org:8083/showcase/android/</link>
+    <link>https://zisistach.org/showcase/android/</link>
     <description>Recent content in Android on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 19 Jan 2020 21:04:11 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org:8083/showcase/android/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org/showcase/android/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Companion for Cyclades</title>
-        <link>https://zisistach.org:8083/showcase/android/android-cyclades/</link>
+        <link>https://zisistach.org/showcase/android/android-cyclades/</link>
         <pubDate>Sun, 19 Jan 2020 21:13:42 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Sun, 19 Jan 2020 21:13:42 +0900</atom:modified>
-        <guid>https://zisistach.org:8083/showcase/android/android-cyclades/</guid>
+        <guid>https://zisistach.org/showcase/android/android-cyclades/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

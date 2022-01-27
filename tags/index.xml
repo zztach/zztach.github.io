@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Zisis Tachtsidis</title>
-    <link>https://zisistach.org:8083/tags/</link>
+    <link>https://zisistach.org/tags/</link>
     <description>Recent content in Tags on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,17 +16,17 @@
     <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 26 Jan 2022 21:45:06 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org:8083/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>concurrency</title>
-        <link>https://zisistach.org:8083/tags/concurrency/</link>
+        <link>https://zisistach.org/tags/concurrency/</link>
         <pubDate>Wed, 26 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/concurrency/</guid>
+        <guid>https://zisistach.org/tags/concurrency/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>java</title>
-        <link>https://zisistach.org:8083/tags/java/</link>
+        <link>https://zisistach.org/tags/java/</link>
         <pubDate>Wed, 26 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/java/</guid>
+        <guid>https://zisistach.org/tags/java/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -58,11 +58,11 @@
       
       <item>
         <title>lucene</title>
-        <link>https://zisistach.org:8083/tags/lucene/</link>
+        <link>https://zisistach.org/tags/lucene/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/lucene/</guid>
+        <guid>https://zisistach.org/tags/lucene/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -76,11 +76,11 @@
       
       <item>
         <title>performance</title>
-        <link>https://zisistach.org:8083/tags/performance/</link>
+        <link>https://zisistach.org/tags/performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/performance/</guid>
+        <guid>https://zisistach.org/tags/performance/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -94,11 +94,11 @@
       
       <item>
         <title>solrcloud</title>
-        <link>https://zisistach.org:8083/tags/solrcloud/</link>
+        <link>https://zisistach.org/tags/solrcloud/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/solrcloud/</guid>
+        <guid>https://zisistach.org/tags/solrcloud/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -112,11 +112,11 @@
       
       <item>
         <title>c&#43;&#43;</title>
-        <link>https://zisistach.org:8083/tags/c&#43;&#43;/</link>
+        <link>https://zisistach.org/tags/c&#43;&#43;/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/c&#43;&#43;/</guid>
+        <guid>https://zisistach.org/tags/c&#43;&#43;/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -130,11 +130,11 @@
       
       <item>
         <title>mac</title>
-        <link>https://zisistach.org:8083/tags/mac/</link>
+        <link>https://zisistach.org/tags/mac/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/mac/</guid>
+        <guid>https://zisistach.org/tags/mac/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -148,11 +148,11 @@
       
       <item>
         <title>opengl</title>
-        <link>https://zisistach.org:8083/tags/opengl/</link>
+        <link>https://zisistach.org/tags/opengl/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/opengl/</guid>
+        <guid>https://zisistach.org/tags/opengl/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -166,11 +166,11 @@
       
       <item>
         <title>aop</title>
-        <link>https://zisistach.org:8083/tags/aop/</link>
+        <link>https://zisistach.org/tags/aop/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/aop/</guid>
+        <guid>https://zisistach.org/tags/aop/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -184,11 +184,11 @@
       
       <item>
         <title>spring</title>
-        <link>https://zisistach.org:8083/tags/spring/</link>
+        <link>https://zisistach.org/tags/spring/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/spring/</guid>
+        <guid>https://zisistach.org/tags/spring/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -202,11 +202,11 @@
       
       <item>
         <title>index</title>
-        <link>https://zisistach.org:8083/tags/index/</link>
+        <link>https://zisistach.org/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zisistach.org:8083/tags/index/</guid>
+        <guid>https://zisistach.org/tags/index/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

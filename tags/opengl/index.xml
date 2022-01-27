@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>opengl on Zisis Tachtsidis</title>
-    <link>https://zisistach.org:8083/tags/opengl/</link>
+    <link>https://zisistach.org/tags/opengl/</link>
     <description>Recent content in opengl on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -16,22 +16,22 @@
     <copyright>©2022, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 13 Mar 2013 12:00:06 +0900</lastBuildDate>
     
-        <atom:link href="https://zisistach.org:8083/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zisistach.org/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>MacOS X and OpenGL</title>
-        <link>https://zisistach.org:8083/posts/02_mac_opengl/</link>
+        <link>https://zisistach.org/posts/02_mac_opengl/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Wed, 13 Mar 2013 12:00:06 +0900</atom:modified>
-        <guid>https://zisistach.org:8083/posts/02_mac_opengl/</guid>
+        <guid>https://zisistach.org/posts/02_mac_opengl/</guid>
         <description>Introduction Here is a guide on configuring an SFML, OpenGL, C++ project under Netbeans in MacOS X. I couldn’t find any similar guide on the net and I encountered some caveats and intricacies while trying to set it up. The lack of a complete guide alone made it worth blogging about.
 First of all, I assume that NetBeans and SFML are already installed on your machine. If not, please go to the corresponding product’s official site and follow the guides there.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.org:8083images/article-icons/1-task.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zisistach.orgimages/article-icons/1-task.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

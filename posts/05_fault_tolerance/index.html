@@ -1752,12 +1752,11 @@
 <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">COMPUTATION_TIMEOUT</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">);</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Translating the above in English you get something like</p>
+</div><p>If that was written in plain English it&rsquo;d go like</p>
 <blockquote>
-<p>&ldquo;Look, I won&rsquo;t allow your Service to bring me down. You can have at most 10<br />
-simultaneous requests to the Service but no more. And each one these will be allowed<br />
-a max of 5 sec to complete. If it does not complete in 5sec you&rsquo;ll get a<br />
-<code>TimeoutException</code> and the Tomcat thread will be allowed to return immediately.&rdquo;</p>
+<p style="text-align: left;">"Look, I won't allow your Service to bring me down. You can have at most 10 simultaneous requests to the 
+Service but no more. And each one of these will be allowed a max of 5 sec to complete. If it does not complete in 5sec you'll get a 
+`TimeoutException` and the Tomcat thread will be allowed to return immediately."</p>
 </blockquote>
 <p>This is certainly a step in the right direction but we still have a blind spot here. What happens if there&rsquo;s a surge of activity and these 10 threads are not enough to handle the extra traffic? Checking the JavaDoc of <code>.newFixedThreadPool()</code> it appears that Java will add those extra tasks into an unbounded queue. The word unbounded just smells trouble. We might end-up putting extreme pressure on the web server by letting this queue go wild. Now, what are our options?</p>
 <h2 id="one-step-further">One step further</h2>
@@ -1784,11 +1783,9 @@ a max of 5 sec to complete. If it does not complete in 5sec you&rsquo;ll get a<b
 </div><p>The above example creates a <code>DirectHandOff</code> type pool. Having<br />
 <code>corePoolSize=20, maxNumThreads=100, keepAliveTime=1, keepAliveTimeUnit=TimeUnit.MINUTES, queue=new SynchronousQueue&lt;&gt;()</code> the above translates into English as follows</p>
 <blockquote>
-<p>&quot; The pool starts with 20 threads. If all 20 threads are busy and new requests keep<br />
-coming in, new threads will be spawned till the upper limit of 100 threads is reached. If<br />
-all 100 threads are busy new requests will be rejected with a<br />
-<code>RejectedExecutionException</code>. If the load decreases the pool will start killing the<br />
-threads that sit idle for more than 1min until it goes back to 20 threads.&quot;</p>
+<p>&quot; The pool starts with 20 threads. If all 20 threads are busy and new requests keep coming in, new threads will be spawned till the upper<br />
+limit of 100 threads is reached. If all 100 threads are busy new requests will be rejected with a <code>RejectedExecutionException</code>. If the load<br />
+decreases the pool will start killing the threads that sit idle for more than 1min until it goes back to 20 threads.&quot;</p>
 </blockquote>
 <p>A nice &ldquo;side-effect&rdquo; of the above <code>ThreadPoolExecutor</code> is that the size of the pool is adaptable to the web server&rsquo;s traffic by fluctuating between <code>corePoolSize</code> and <code>maxNumThreads</code> depending on the load.</p>
 <p>One last thing. In practice it&rsquo;s also useful to give names to those threads. You can thank yourself later while debugging and reading thread dumps. A custom <code>ThreadPoolExecutor</code> is all that is needed</p>

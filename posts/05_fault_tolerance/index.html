@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SolrCloud performance tuning – Zisis Tachtsidis</title>
+    <title>Fault tolerant services – Zisis Tachtsidis</title>
     
 
 
@@ -653,7 +653,7 @@
     
     var baseurl = JSON.parse("\"https://zisistach.org\"");
     
-    var permalink = JSON.parse("\"https://zisistach.org/posts/03_solr_performance/\"");
+    var permalink = JSON.parse("\"https://zisistach.org/posts/05_fault_tolerance/\"");
     
     var langprefix = JSON.parse("\"\"");
     var searchResults = null;
@@ -1331,32 +1331,32 @@
 
 
     
-<meta name="description" content="A guide on common performance issues encountered in SolrCloud" />
+<meta name="description" content="Safeguard your application from total breakdown" />
 
 
-<meta name="keywords" content="solrcloud,lucene,java,performance,distributed">
+<meta name="keywords" content="java,concurrency,distributed">
 
-<meta name="created" content="2018-03-11T12:00:06&#43;0900">
-<meta name="modified" content="2018-03-11T12:00:06&#43;0900">
-<meta property="article:published_time" content="2018-03-11T12:00:06&#43;0900">
+<meta name="created" content="2022-01-28T21:45:06&#43;0900">
+<meta name="modified" content="2022-01-28T21:45:06&#43;0900">
+<meta property="article:published_time" content="2022-01-28T21:45:06&#43;0900">
 
 <meta name="author" content="Zisis">
-<meta property="article:author" content="https://zisistach.org/posts/03_solr_performance/@Zisis">
+<meta property="article:author" content="https://zisistach.org/posts/05_fault_tolerance/@Zisis">
 
 
 <meta property="og:site_name" content="Zisis Tachtsidis">
-<meta property="og:title" content="SolrCloud performance tuning">
-<meta property="og:url" content="https://zisistach.org/posts/03_solr_performance/">
+<meta property="og:title" content="Fault tolerant services">
+<meta property="og:url" content="https://zisistach.org/posts/05_fault_tolerance/">
 <meta property="og:type" content="article">
-<meta property="og:description" content="A guide on common performance issues encountered in SolrCloud">
+<meta property="og:description" content="Safeguard your application from total breakdown">
 
   
-    <meta property="og:image" content="https://zisistach.org/images/article-icons/1-performance.png">
-    <meta property="og:image:url" content="https://zisistach.org/images/article-icons/1-performance.png">
+    <meta property="og:image" content="https://zisistach.org/images/article-icons/1-solid.png">
+    <meta property="og:image:url" content="https://zisistach.org/images/article-icons/1-solid.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Zisis Tachtsidis">
-    <meta property="twitter:title" content="SolrCloud performance tuning">
-    <meta property="twitter:description" content="A guide on common performance issues encountered in SolrCloud">
+    <meta property="twitter:title" content="Fault tolerant services">
+    <meta property="twitter:description" content="Safeguard your application from total breakdown">
   
 
 <meta name="generator" content="Hugo 0.86.1" />
@@ -1368,7 +1368,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="https://zisistach.org/posts/03_solr_performance/">
+<link rel="canonical" href="https://zisistach.org/posts/05_fault_tolerance/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1394,13 +1394,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "SolrCloud performance tuning",
-    "datePublished": "2018-03-11T12:00:06+09:00",
-    "dateModified": "2018-03-11T12:00:06+09:00",
-    "url" : "https://zisistach.org/posts/03_solr_performance/",
-    "description": "A guide on common performance issues encountered in SolrCloud",
-    "keywords": ["solrcloud","lucene","java","performance","distributed"],
-    "image" : "https://zisistach.org/images/article-icons/1-performance.png",
+    "headline": "Fault tolerant services",
+    "datePublished": "2022-01-28T21:45:06+09:00",
+    "dateModified": "2022-01-28T21:45:06+09:00",
+    "url" : "https://zisistach.org/posts/05_fault_tolerance/",
+    "description": "Safeguard your application from total breakdown",
+    "keywords": ["java","concurrency","distributed"],
+    "image" : "https://zisistach.org/images/article-icons/1-solid.png",
     "author": {
       "@type": "Person",
       "name": "Zisis"
@@ -1630,7 +1630,7 @@
   
   <li  class="is-active" >
     
-      <span>SolrCloud performance tuning</span>
+      <span>Fault tolerant services</span>
     
   </li>
   
@@ -1642,14 +1642,14 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">SolrCloud performance tuning</h2>
+    <h2 class="single__title" data-ani="true">Fault tolerant services</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Written At">📅&nbsp;Mar 11, 2018 </time>
+  <time class="single__info" title="Written At">📅&nbsp;Jan 28, 2022 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">🏍&nbsp;Zisis</span>
   
@@ -1664,13 +1664,9 @@
   🏷️
   
 
-  <li><a href="https://zisistach.org/tags/solrcloud/" class="single__tag" title="solrcloud">#solrcloud</a></li>
-
-  <li><a href="https://zisistach.org/tags/lucene/" class="single__tag" title="lucene">#lucene</a></li>
-
   <li><a href="https://zisistach.org/tags/java/" class="single__tag" title="java">#java</a></li>
 
-  <li><a href="https://zisistach.org/tags/performance/" class="single__tag" title="performance">#performance</a></li>
+  <li><a href="https://zisistach.org/tags/concurrency/" class="single__tag" title="concurrency">#concurrency</a></li>
 
   <li><a href="https://zisistach.org/tags/distributed/" class="single__tag" title="distributed">#distributed</a></li>
 
@@ -1690,59 +1686,173 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a></li>
-    <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
-    <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
-    <li><a href="#improving-search-throughput">Improving search throughput</a>
-      <ul>
-        <li><a href="#adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</a></li>
-        <li><a href="#check-your-filtercache-hit-ratio-especially-in-distributed-search">Check your FilterCache hit ratio (especially in distributed search)</a></li>
-        <li><a href="#profile-indexingsearch-and-pay-attention-to-your-custom-analyzerstokenizersfilters">Profile indexing/search and pay attention to your custom analyzers/tokenizers/filters</a></li>
-        <li><a href="#if-you-have-gc-choking-issues-try-the-g1-collector">If you have GC choking issues, try the G1 collector.</a></li>
-        <li><a href="#utilize-facetthreads">Utilize facet.threads</a></li>
-        <li><a href="#use-docvalues-for-faceting">Use DocValues for faceting</a></li>
-        <li><a href="#pay-attention-to-your-deleted-documents">Pay attention to your deleted documents</a></li>
-      </ul>
-    </li>
+    <li><a href="#initial-take">Initial take</a></li>
+    <li><a href="#setting-an-upper-bound">Setting an upper bound</a></li>
+    <li><a href="#one-step-further">One step further</a></li>
+    <li><a href="#linking-your-work-to-a-circuit-breaker">Linking your work to a circuit breaker</a></li>
+    <li><a href="#downsides">Downsides</a></li>
+    <li><a href="#takeaways">Takeaways</a></li>
   </ul>
 </nav>
   </div>
 </div>
 
       <h2 id="introduction">Introduction</h2>
-<p>Most of the recommendations presented below are coming directly from the web (StackOverflow, Solr wiki, Solr Jira, Solr mailing list), while some others required a lot of testing and debugging in order to reach a solution. This post is about keeping them all in a common place with the hope of helping someone out there having similar issues. It’s also nowhere complete. In this post we’ll focus on SolrCloud stability and search performance. There are more Solr performance related storied to tell.</p>
-<h2 id="potential-issues-causing-cluster-instability">Potential issues causing cluster instability</h2>
-<p>The following points fall under the “abusing Solr” category. The same way that JOIN functionality provided by RDBMs does not mean that all the JOIN queries you can imagine will be performant, there are some usages of Solr that are not ideal performance-wise.</p>
-<h2 id="avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</h2>
-<p>Avoid setting Integer.MAX or high values (usually when doing paging with start and rows params) in .setRows() call when preparing a SolrQuery. It can wreak havoc to the Solr cluster. Basically Solr tries to allocate as much memory as indicated in the param passed to .setRows(), not a good thing. Haven’t seen it with my own eyes happening but others have. Check Solr Wiki and Statsbiblioteket.<br />
-Alternatives:</p>
+<p>We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach but it goes without saying that it also introduces some new problems that need our attention.</p>
+<p>One of those is fault tolerance. For example, what happens when one of the services degrades in performance? If you don&rsquo;t take any measures the application that makes the calls to that &ldquo;problematic&rdquo; service will start experiencing long timeouts and might even go down if threads accumulate while waiting for a response. You need to have some safeguards in-place.</p>
+<p>It&rsquo;s so common of a problem that there are open source tools available like <code>Hystix</code> (<a href="https://github.com/Netflix/Hystrix">https://github.com/Netflix/Hystrix</a>) and <code>resilience4j</code> (<a href="https://github.com/resilience4j/resilience4j">https://github.com/resilience4j/resilience4j</a>) that deal with it. And most of the times taking advantage of such battle-tested tools is the way to go.</p>
+<p>Here, we&rsquo;ll take a look at what might lurk inside such a fault-tolerant library. Think of it more like an exercise but it can also prove useful if you need something in-place without adding more dependencies in an existing library-bloated application. (Anyone having lived through JAR hell <a href="https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell">https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell</a> can relate to that)</p>
+<p>The basic ideas behind this are described in <a href="https://github.com/Netflix/Hystrix/wiki#how-does-hystrix-accomplish-its-goals">https://github.com/Netflix/Hystrix/wiki#how-does-hystrix-accomplish-its-goals</a></p>
+<h2 id="initial-take">Initial take</h2>
+<p>Imagine a scenario where you have a web application running on an application server like Apache Tomcat.  Every click on the website is picked up by a thread from Tomcat&rsquo;s thread pool. At some point, in order to accomplish a task it has to communicate with a Service through an API call like</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">ServiceClient</span><span class="o">.</span><span class="na">serve</span><span class="o">(</span><span class="n">req</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The <code>ServiceClient</code> performs HTTP calls to the independent service. If the Service degrades then more and more Tomcat threads are getting piled up waiting for the Service to respond. In a busy web server this behavior can even bring down the server due to the high number of threads. Other symptoms include increased memory usage, increased CPU context switching or even inability to create new threads.</p>
+<h2 id="setting-an-upper-bound">Setting an upper bound</h2>
+<p>You can put a limit to that by wrapping these requests to the Service in another thread. One way to go about this is by using a bounded thread pool in Java like this</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">final</span> <span class="kt">int</span> <span class="n">COMPUTATION_TIMEOUT</span> <span class="o">=</span> <span class="n">5</span><span class="o">;</span>
+<span class="kd">final</span> <span class="kt">int</span> <span class="n">NUM_THREADS</span> <span class="o">=</span> <span class="n">10</span><span class="o">;</span>
+
+<span class="n">ExecutorService</span> <span class="n">executor</span> <span class="o">=</span> <span class="n">Executors</span><span class="o">.</span><span class="na">newFixedThreadPool</span><span class="o">(</span><span class="n">NUM_THREADS</span><span class="o">);</span>
+
+<span class="n">Supplier</span><span class="o">&lt;</span><span class="n">Response</span><span class="o">&gt;</span> <span class="n">req</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                <span class="k">try</span> <span class="o">{</span>
+                    <span class="k">return</span> <span class="n">ServiceClient</span><span class="o">.</span><span class="na">serve</span><span class="o">(</span><span class="n">requestParams</span><span class="o">);</span>
+                <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="k">throw</span> <span class="k">new</span> <span class="n">CompletionException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">};</span>
+<span class="n">CompletableFuture</span><span class="o">&lt;</span><span class="n">Response</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="n">CompletableFuture</span><span class="o">.</span><span class="na">supplyAsync</span><span class="o">(</span><span class="n">req</span><span class="o">,</span> <span class="n">executor</span><span class="o">);</span>
+
+<span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">COMPUTATION_TIMEOUT</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Translating the above in English you get something like</p>
+<blockquote>
+<p>&ldquo;Look, I won&rsquo;t allow your Service to bring me down. You can have at most 10<br />
+simultaneous requests to the Service but no more. And each one these will be allowed<br />
+a max of 5 sec to complete. If it does not complete in 5sec you&rsquo;ll get a<br />
+<code>TimeoutException</code> and the Tomcat thread will be allowed to return immediately.&rdquo;</p>
+</blockquote>
+<p>This is certainly a step in the right direction but we still have a blind spot here. What happens if there&rsquo;s a surge of activity and these 10 threads are not enough to handle the extra traffic? Checking the JavaDoc of <code>.newFixedThreadPool()</code> it appears that Java will add those extra tasks into an unbounded queue. The word unbounded just smells trouble. We might end-up putting extreme pressure on the web server by letting this queue go wild. Now, what are our options?</p>
+<h2 id="one-step-further">One step further</h2>
+<p>Depending on your use-case it might be proper to define a different strategy for queuing. For example rejecting the incoming requests when all threads are busy might be a viable solution. For example If you click to reserve a room or perform a search operation you can still get a message &ldquo;Please retry&rdquo; and issue the command again.</p>
+<p>Thankfully you can configure this behavior by introducing a custom <code>ThreadPoolExecutor</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">ThreadPoolExecutor</span> <span class="n">executor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span>
+	<span class="n">corePoolSize</span><span class="o">,</span> 
+	<span class="n">maxNumThreads</span><span class="o">,</span>
+    <span class="n">keepAliveTime</span><span class="o">,</span> <span class="n">keepAliveTimeUnit</span><span class="o">,</span> 
+	<span class="n">queue</span><span class="o">);</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>The above example creates a <code>DirectHandOff</code> type pool. Having<br />
+<code>corePoolSize=20, maxNumThreads=100, keepAliveTime=1, keepAliveTimeUnit=TimeUnit.MINUTES, queue=new SynchronousQueue&lt;&gt;()</code> the above translates into English as follows</p>
+<blockquote>
+<p>&quot; The pool starts with 20 threads. If all 20 threads are busy and new requests keep<br />
+coming in, new threads will be spawned till the upper limit of 100 threads is reached. If<br />
+all 100 threads are busy new requests will be rejected with a<br />
+<code>RejectedExecutionException</code>. If the load decreases the pool will start killing the<br />
+threads that sit idle for more than 1min until it goes back to 20 threads.&quot;</p>
+</blockquote>
+<p>A nice &ldquo;side-effect&rdquo; of the above <code>ThreadPoolExecutor</code> is that the size of the pool is adaptable to the web server&rsquo;s traffic by fluctuating between <code>corePoolSize</code> and <code>maxNumThreads</code> depending on the load.</p>
+<p>One last thing. In practice it&rsquo;s also useful to give names to those threads. You can thank yourself later while debugging and reading thread dumps. A custom <code>ThreadPoolExecutor</code> is all that is needed</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">// ThreadFactoryBuilder is used here for simplicity, it&#39;s a Google Guava class
+</span><span class="c1"></span><span class="n">ThreadFactory</span> <span class="n">threadFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadFactoryBuilder</span><span class="o">()</span>
+                                                <span class="o">.</span><span class="na">setNameFormat</span><span class="o">(</span><span class="n">poolName</span> <span class="o">+</span> <span class="s">&#34;-%d&#34;</span><span class="o">)</span>
+                                                <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+<span class="n">ThreadPoolExecutor</span> <span class="n">executor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ThreadPoolExecutor</span><span class="o">(</span>
+	<span class="n">corePoolSize</span><span class="o">,</span> 
+	<span class="n">maxNumThreads</span><span class="o">,</span>
+    <span class="n">keepAliveTime</span><span class="o">,</span> <span class="n">keepAliveTimeUnit</span><span class="o">,</span> 
+	<span class="k">new</span> <span class="n">SynchronousQueue</span><span class="o">&lt;&gt;(),</span>            
+	<span class="n">threadFactory</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="linking-your-work-to-a-circuit-breaker">Linking your work to a circuit breaker</h2>
+<p>Finally, after all of the above are setup properly you can combine your new thread pool with a circuit breaker. A simplified circuit breaker records successes and failures and has 2 corresponding thresholds. When there are FAILURE_THRESHOLD number of consecutive failed requests the circuit is open, meaning new requests are not forwarded to the service. The circuit remains semi-open for DELAY number of TIME_UNIT. Once you get SUCCESS_THRESHOLD number of consecutive successful request the circuit will move from semi-open to close and communication with the service resumes normally.<br />
+The only thing that needs care is when to increase the counter of failed requests. Usually certain exceptions should be taken into account, in our case these include <code>RejectedExecutionException</code> and <code>TimeoutException</code>.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">CircuitBreaker</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">breaker</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CircuitBreaker</span><span class="o">&lt;&gt;()</span>
+                    <span class="o">.</span><span class="na">withFailureThreshold</span><span class="o">(</span><span class="n">FAILURE_THRESHOLD</span><span class="o">,</span> <span class="n">20</span><span class="o">))</span>
+                    <span class="o">.</span><span class="na">withSuccessThreshold</span><span class="o">(</span><span class="n">SUCCESS_THRESHOLD</span><span class="o">,</span> <span class="n">10</span><span class="o">))</span>                          <span class="o">.</span><span class="na">withDelay</span><span class="o">(</span><span class="n">Duration</span><span class="o">.</span><span class="na">ofMillis</span><span class="o">(</span><span class="n">DELAY</span><span class="o">,</span> <span class="n">20</span><span class="o">,</span> <span class="n">TIME_UNIT</span><span class="o">)));</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="downsides">Downsides</h2>
+<p>The above approach will work just fine. The main downsides is that the limits defined in <code>ThreadPoolExecutor</code> and <code>CircuitBreaker</code> are predefined and static. You need to understand your system&rsquo;s capacity and your expected traffic for setting the proper values without hindering your system&rsquo;s scalability.</p>
+<p>In order to overcome this you need to work towards more adaptive implementations that react to an application&rsquo;s real-time performance.</p>
+<h2 id="takeaways">Takeaways</h2>
+<p>Communication between services is of critical importance. Especially nowadays with applications having many moving parts, a single failure can cascade to the whole system. We must be very prudent when designing such a system.</p>
+<p>One cannot simply deploy a bunch of services that communicate with each other in order to bring something meaningful to the user and just hope for the best. It&rsquo;s better to assume that something will fail and be sure that most (if not all) of the times it will.</p>
+<p>The basic steps that have discussed to achieve basic  fault tolerance in your application are</p>
 <ul>
-<li>For real-time requests first get the # of docs in the index and pass this to .setRows() instead. For calls that you know what to expect just pass the expected number of results.</li>
-<li>For “next-page” functionality and offline procedures cursorMark can be utilized.</li>
+<li>Wrap each request in a new thread</li>
+<li>Make sure your thread is part of a bounded thread pool</li>
+<li>Set timeouts for each request</li>
+<li>Reject additional requests when the threshold is exceeded</li>
+<li>Trigger a circuit breaker in case of failures</li>
 </ul>
-<h2 id="avoid-using-deletebyquery">Avoid using deleteByQuery</h2>
-<p>Calling intermixed calls to indexing and deleteByQuery is just asking for trouble. If you witness seemingly random replicas crashes and/or getting in recovery mode it might be related to deleteByQuery interspersed with indexing requests.</p>
-<p>Alternatives:</p>
-<ul>
-<li>Make use of deleteById() directly if possible.</li>
-<li>Try to search first using the query that is passed to deleteByQuery(), get the IDs and call deleteById().</li>
-<li>Get rid of your deletes altogether, by making use of atomic updates. This comes with its own limitations but you can check if it fits your use-case.</li>
-</ul>
-<h2 id="improving-search-throughput">Improving search throughput</h2>
-<h3 id="adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</h3>
-<p>The story has as follows. Search on a single-sharded SolrCloud setup with an 10M docs/350GB index and high cardinality fields was slow, especially when faceting was utilized. A simple search from Solr admin page with faceting enabled could take ~1.5sec.After the index was split into 8 shards the same query’s response time dropped to ~200msec! That’s great I thought, problem solved. But it wasn’t to be. Running a load test showed that after a certain rate (&gt;20QPS) performance dropped dramatically.So, what was going on? At first I noticed that having more than 2 shards on the same Solr JVM was causing slowness, but I could not figure out why this was happening. The CPUs on the machine were more than enough to server requests in multiple shards. Turns out there’s a property which can be placed inside solr.xml under the HttpShardHandlerFactory node. It’s called maxConnectionsPerHost and increasing that (default value is 20) gives some fresh air to Solr and inter-shard communication and response times are back to expected values (~200msec) even under heavy load.</p>
-<h3 id="check-your-filtercache-hit-ratio-especially-in-distributed-search">Check your FilterCache hit ratio (especially in distributed search)</h3>
-<p>Searching in a distributed index makes heavy use of the FilterCache that is not evident when searching in a single shard. Faceting especially seems to generate and store multiple entries in FilterCache. In these cases it’s better to configure your FilterCache using maxRamMB as faceting adds multiple entries of small size.</p>
-<h3 id="profile-indexingsearch-and-pay-attention-to-your-custom-analyzerstokenizersfilters">Profile indexing/search and pay attention to your custom analyzers/tokenizers/filters</h3>
-<p>You don’t really need any exotic tools for this one. Tools provided by the JDK (like JVisualVM) can monitor threads/memory activity while you index/search. Look for your custom classes and how much time is spent on them.</p>
-<h3 id="if-you-have-gc-choking-issues-try-the-g1-collector">If you have GC choking issues, try the G1 collector.</h3>
-<p>It can do miracles. Witnessed a setup where the default collector used by Solr could not cope with the load after some time. Just switching to G1 fixed things.</p>
-<h3 id="utilize-facetthreads">Utilize facet.threads</h3>
-<p>In practice the use of facet.threads has improved search response times when faceting is enabled but still sharding the index will probably yield better response times for faceting and search in general.  There’s no point in setting this variable a higher value than the # of fields you are faceting on. It should at most be equal to the # of faceting fields.</p>
-<h3 id="use-docvalues-for-faceting">Use DocValues for faceting</h3>
-<p>This comes directly from Solr Documentation, although I don’t have any serious metrics I’ll take their word for it.</p>
-<h3 id="pay-attention-to-your-deleted-documents">Pay attention to your deleted documents</h3>
-<p>Maybe you have a perfectly healthy SolrCloud instance which performs great. Time goes on and after a few months you notice a dramatic degradation in search performance. Code is the same, hardware is the same. It’s time to have a look at the percentage of the deleted documents in your index. They might be responsible for this degradation and you have to somehow get rid of them. Segments handling in Lucene/Solr as well as handling of deleted documents is a black art (or black magic for that matter). More info can be found at <a href="https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/">https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/</a>.</p>
 
     </article>
     
@@ -1942,13 +2052,13 @@ Alternatives:</p>
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzisistach.org%2fposts%2f03_solr_performance%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzisistach.org%2fposts%2f05_fault_tolerance%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=SolrCloud%20performance%20tuning&url=https%3a%2f%2fzisistach.org%2fposts%2f03_solr_performance%2f&hashtags=solrcloud%2clucene%2cjava%2cperformance%2cdistributed&via=Zisis" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Fault%20tolerant%20services&url=https%3a%2f%2fzisistach.org%2fposts%2f05_fault_tolerance%2f&hashtags=java%2cconcurrency%2cdistributed&via=Zisis" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -2040,6 +2150,14 @@ Alternatives:</p>
     <ul class="related-ul">
         
         <li>
+          <a href="/posts/04_be_gentle_to_interruptions/" class="related__link">Keeping your threads under control</a>
+        </li>
+        
+        <li>
+          <a href="/posts/03_solr_performance/" class="related__link">SolrCloud performance tuning</a>
+        </li>
+        
+        <li>
           <a href="/posts/01_spring-aop-bug/" class="related__link">Spring AOP &amp; Bean Naming conflict</a>
         </li>
         
@@ -2050,21 +2168,14 @@ Alternatives:</p>
 <nav class="pagination-single">
   
     
-      <a href="https://zisistach.org/posts/02_mac_opengl/" class="pagination-single__left">
+      <a href="https://zisistach.org/posts/04_be_gentle_to_interruptions/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">MacOS X and OpenGL</div>      
+        <div class="pagination-single__left-title">Keeping your threads under control</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="https://zisistach.org/posts/04_be_gentle_to_interruptions/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Keeping your threads under control</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2477,20 +2588,12 @@ document.addEventListener('DOMContentLoaded', function () {
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a></li>
-    <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
-    <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
-    <li><a href="#improving-search-throughput">Improving search throughput</a>
-      <ul>
-        <li><a href="#adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</a></li>
-        <li><a href="#check-your-filtercache-hit-ratio-especially-in-distributed-search">Check your FilterCache hit ratio (especially in distributed search)</a></li>
-        <li><a href="#profile-indexingsearch-and-pay-attention-to-your-custom-analyzerstokenizersfilters">Profile indexing/search and pay attention to your custom analyzers/tokenizers/filters</a></li>
-        <li><a href="#if-you-have-gc-choking-issues-try-the-g1-collector">If you have GC choking issues, try the G1 collector.</a></li>
-        <li><a href="#utilize-facetthreads">Utilize facet.threads</a></li>
-        <li><a href="#use-docvalues-for-faceting">Use DocValues for faceting</a></li>
-        <li><a href="#pay-attention-to-your-deleted-documents">Pay attention to your deleted documents</a></li>
-      </ul>
-    </li>
+    <li><a href="#initial-take">Initial take</a></li>
+    <li><a href="#setting-an-upper-bound">Setting an upper bound</a></li>
+    <li><a href="#one-step-further">One step further</a></li>
+    <li><a href="#linking-your-work-to-a-circuit-breaker">Linking your work to a circuit breaker</a></li>
+    <li><a href="#downsides">Downsides</a></li>
+    <li><a href="#takeaways">Takeaways</a></li>
   </ul>
 </nav>
   </div>

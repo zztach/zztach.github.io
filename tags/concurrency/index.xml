@@ -14,14 +14,60 @@
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 26 Jan 2022 21:45:06 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Jan 2022 21:45:06 +0900</lastBuildDate>
+    <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://zisistach.org/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
-        <title>Java concurrency - Stability</title>
+        <title>Fault tolerant services</title>
+        <link>https://zisistach.org/posts/05_fault_tolerance/</link>
+        <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Fri, 28 Jan 2022 21:45:06 +0900</atom:modified>
+        <guid>https://zisistach.org/posts/05_fault_tolerance/</guid>
+        <description>Introduction We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach but it goes without saying that it also introduces some new problems that need our attention.
+One of those is fault tolerance. For example, what happens when one of the services degrades in performance? If you don&amp;rsquo;t take any measures the application that makes the calls to that &amp;ldquo;problematic&amp;rdquo; service will start experiencing long timeouts and might even go down if threads accumulate while waiting for a response.</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://zisistach.orgimages/article-icons/1-solid.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>java</category>
+            
+          
+            
+              <category>concurrency</category>
+            
+          
+            
+              <category>distributed</category>
+            
+          
+        
+        
+          
+            
+              <category>Robustness</category>
+            
+          
+        
+        
+          
+            
+              <category>Software</category>
+            
+          
+        
+      </item>
+      
+      <item>
+        <title>Keeping your threads under control</title>
         <link>https://zisistach.org/posts/04_be_gentle_to_interruptions/</link>
         <pubDate>Wed, 26 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>

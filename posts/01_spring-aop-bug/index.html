@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Spring AOP &amp; Bean Naming. Is it a bug? – Zisis Tachtsidis</title>
+    <title>Spring AOP &amp; Bean Naming conflict – Zisis Tachtsidis</title>
     
 
 
@@ -1334,7 +1334,7 @@
 <meta name="description" content="A case of name collision in Spring Framework" />
 
 
-<meta name="keywords" content="spring,aop">
+<meta name="keywords" content="spring,java,aop">
 
 <meta name="created" content="2011-09-14T12:00:06&#43;0900">
 <meta name="modified" content="2011-09-14T12:00:06&#43;0900">
@@ -1345,7 +1345,7 @@
 
 
 <meta property="og:site_name" content="Zisis Tachtsidis">
-<meta property="og:title" content="Spring AOP &amp; Bean Naming. Is it a bug?">
+<meta property="og:title" content="Spring AOP &amp; Bean Naming conflict">
 <meta property="og:url" content="https://zisistach.org/posts/01_spring-aop-bug/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="A case of name collision in Spring Framework">
@@ -1355,7 +1355,7 @@
     <meta property="og:image:url" content="https://zisistach.org/images/article-icons/1-bug.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:app:name:iphone" content="Zisis Tachtsidis">
-    <meta property="twitter:title" content="Spring AOP &amp; Bean Naming. Is it a bug?">
+    <meta property="twitter:title" content="Spring AOP &amp; Bean Naming conflict">
     <meta property="twitter:description" content="A case of name collision in Spring Framework">
   
 
@@ -1394,12 +1394,12 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Spring AOP \u0026 Bean Naming. Is it a bug?",
+    "headline": "Spring AOP \u0026 Bean Naming conflict",
     "datePublished": "2011-09-14T12:00:06+09:00",
     "dateModified": "2011-09-14T12:00:06+09:00",
     "url" : "https://zisistach.org/posts/01_spring-aop-bug/",
     "description": "A case of name collision in Spring Framework",
-    "keywords": ["spring","aop"],
+    "keywords": ["spring","java","aop"],
     "image" : "https://zisistach.org/images/article-icons/1-bug.png",
     "author": {
       "@type": "Person",
@@ -1630,7 +1630,7 @@
   
   <li  class="is-active" >
     
-      <span>Spring AOP &amp; Bean Naming. Is it a bug?</span>
+      <span>Spring AOP &amp; Bean Naming conflict</span>
     
   </li>
   
@@ -1642,7 +1642,7 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Spring AOP &amp; Bean Naming. Is it a bug?</h2>
+    <h2 class="single__title" data-ani="true">Spring AOP &amp; Bean Naming conflict</h2>
     <h3 class="single__subtitle"></h3>
     <div class="single__meta">
       
@@ -1666,6 +1666,8 @@
 
   <li><a href="https://zisistach.org/tags/spring/" class="single__tag" title="spring">#spring</a></li>
 
+  <li><a href="https://zisistach.org/tags/java/" class="single__tag" title="java">#java</a></li>
+
   <li><a href="https://zisistach.org/tags/aop/" class="single__tag" title="aop">#aop</a></li>
 
 </ul>
@@ -1683,7 +1685,7 @@
   <div class="expand__content expand__content--toc">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#spring-aop-fun">Spring aop fun!</a></li>
+    <li><a href="#spring-aop-fun">Spring AOP fun!</a></li>
     <li><a href="#erroneous-behavior">Erroneous behavior</a></li>
     <li><a href="#digging-in">Digging in</a></li>
     <li><a href="#solution">Solution</a></li>
@@ -1693,9 +1695,9 @@
   </div>
 </div>
 
-      <h2 id="spring-aop-fun">Spring aop fun!</h2>
-<p>My everyday life at work involves dealing with several Java frameworks such as <em>Spring, Hibernate and JSF</em> amongst others. Some of them are quite easy to grasp while others have a steeper learning curve (Hibernate raises its hand here), especially when it comes to making it performant.</p>
-<p>Lately, I’ve been trying to extend the use of AOP in our project and use it for a quite common purpose, to measure the performance of our app. A simple google search will return a lot of sample implementations to give you an idea. In essence by using AOP and the @Around advice I managed to get the execution times of most of our service calls and with the help of some custom code to get the percentages that each part of our app was contributing to the overall time of execution. It’s true that the more you use Spring the more you appreciate the benefits derived from it.</p>
+      <h2 id="spring-aop-fun">Spring AOP fun!</h2>
+<p>My everyday life at work involves dealing with several Java frameworks such as <em>Spring, Hibernate and JSF</em> among others. Most frameworks  Take Spring for example. IT removes a <strong>lot</strong> of burden from the developer and gets you up to speed fast but in order to achieve this it makes a lot of conventions. This is not bad per-se but it can turn into an ugly beast at times - notably for the uninitiated - when trying to decipher what is wrong in your application.</p>
+<p>Lately, I’ve been trying to extend the use of Spring AOP in our project and utilize it to measure the performance of our app. A simple google search will return a lot of sample implementations to give you an idea. In essence by using AOP and the @Around advice I managed to get the execution times of most of our service calls. A little bit of extra custom code and we also got the percentages that each part of our app was contributing to the overall time of execution. It’s true that the more you are using Spring the more you appreciate its benefits.</p>
 <p>Everything was working just fine and we were all happy until a colleague of mine turned to me saying</p>
 <blockquote>
 <p>“You know, we’ve got to add this service’s methods to the calculations, I think that’s the one that’s slowing us down”</p>
@@ -1704,7 +1706,7 @@
 <blockquote>
 <p>“Well, that’s easy, I’ll just add another one <a href="aop:pointcut">aop:pointcut</a> with the corresponding expression and link that to a new <a href="aop:around">aop:around</a> advice”.</p>
 </blockquote>
-<p>In reality things are just so simple but my reality was quite different and cost me a whole working day to get it fixed.</p>
+<p>In reality it should have been as simple as that but I&rsquo;ve ended up spending a whole working day to sort it out.</p>
 <h2 id="erroneous-behavior">Erroneous behavior</h2>
 <p>As soon as the pointcut and advice were added errors of the following type started cropping up</p>
 <div class="highlight"><div class="chroma">
@@ -1760,8 +1762,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="digging-in">Digging in</h2>
-<p>I started an intensive search in the net with the above exceptions and although I found a lot of references and provided solutions none of them really fitted my case.</p>
-<p>The bean I was injecting was definitely there (StupidServiceImpl.java) and it was definitely implementing the required interface (StupidService.java). Spring uses dynamic JDK proxies by default intercepting interface methods only. Moreover all references inside the code were referring to the interface and not the implementation. Not to mention other services will the same logic (as far as setup is concerned) were successfully injected. I tried everything JDK-proxies, CGILIB proxies, read again and again the Spring AOP documentation but to no avail. I even wrote a BeanFactoryPostProcessor to understand what was happening during Spring initialization and it was then that I realized that StupidService was initialized as an AspectJExpressionPointcut and not a StupidService instance and reconsidered the meaning behind the above exception.</p>
+<p>I started an intensive internet search with the above exceptions and although I found a lot of references and provided solutions none of them really fitted my case.</p>
+<p>The bean I was injecting was definitely there (StupidServiceImpl.java) and it was definitely implementing the required interface (StupidService.java). Spring uses dynamic JDK proxies by default intercepting interface methods only. Moreover all references inside the code were referring to the interface and not the implementation. Not to mention other services will the same logic (as far as setup is concerned) were successfully injected. I tried everything JDK-proxies, CGILIB proxies, read again and again the Spring AOP documentation but to no avail. I even wrote a BeanFactoryPostProcessor to understand what was happening during Spring initialization and it was then that I realized that StupidService was initialized as an AspectJExpressionPointcut and not as a StupidService instance and reconsidered the meaning behind the above exception.</p>
 <h2 id="solution">Solution</h2>
 <p>What was the case? My <strong>StupidServiceImpl</strong> bean was annotated as</p>
 <div class="highlight"><div class="chroma">
@@ -1781,12 +1783,16 @@
 <pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;aop:pointcut</span> <span class="na">id=</span><span class="s">”stupidService”</span> <span class="na">expression=</span><span class="s">”execution(*</span> <span class="err">com.mycompany.stupidservice.StupidService.*(..))”</span><span class="nt">/&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>The id of the Service in the annotation was the same as the pointcut’s ID in the XML but neither Spring nor my IDE gave me an error that 2 Spring “elements” shared the same id. The end result was that StupidService was instantiated as a pointcut (annotations are parsed first, then xml configuration files) and when I was trying to inject it on my beans it could not be converted to a StupidService bean.</p>
-<p>It seems that while Spring validates between bean ids in annotations and xml files (Spring flags an error if one bean in an XML has the same id with an annotated bean), it does not do so when it comes to annotations and aop advices declared in an XML file.</p>
+</div><p>The <strong>id</strong> of the Service in the annotation was the same as the pointcut’s ID in the XML but neither Spring nor my IDE gave me an error that 2 Spring “elements” shared the same id. The end result was that StupidService was instantiated as a pointcut (annotations are parsed first, then xml configuration files) and when I was trying to inject it on my beans it could not be converted to a StupidService bean.</p>
 <h2 id="takeaways">Takeaways</h2>
-<p>Can the above be considered as a Spring bug?</p>
-<p><strong>Always make sure that the IDs of your beans are unique.</strong> Usually your IDE will take good care of this job but as it seems this is not always the case. Pay extra attention to the errors displayed. If you see a failure in casting a bean from one type to another maybe you have fallen to the same “trap”.</p>
-<p>PS. For the record, I’m using Spring 3.0.5.RELEASE version.</p>
+<p>Why the hell should someone give the same name to an AOP advice and a bean?<br />
+Should Spring provide a more informative message?</p>
+<ul>
+<li><strong>It seems that while Spring validates between bean ids in annotations and xml files (Spring flags an error if one bean in an XML has the same id with an annotated bean), it does not do so when it comes to annotations and aop advices declared in an XML file.</strong></li>
+<li><strong>Always make sure that the IDs of your beans are unique.</strong></li>
+</ul>
+<p>Usually your IDE will take good care of this job but as it seems this is not always the case. Pay extra attention to the errors displayed. If you see a failure in casting a bean from one type to another maybe you have fallen to the same “trap”.</p>
+<p>PS. The above were observed in Spring 3.0.5.RELEASE.</p>
 
     </article>
     
@@ -1992,7 +1998,7 @@
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Spring%20AOP%20%26%20Bean%20Naming.%20Is%20it%20a%20bug%3f&url=https%3a%2f%2fzisistach.org%2fposts%2f01_spring-aop-bug%2f&hashtags=spring%2caop&via=Zisis" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Spring%20AOP%20%26%20Bean%20Naming%20conflict&url=https%3a%2f%2fzisistach.org%2fposts%2f01_spring-aop-bug%2f&hashtags=spring%2cjava%2caop&via=Zisis" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -2498,7 +2504,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="true" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#spring-aop-fun">Spring aop fun!</a></li>
+    <li><a href="#spring-aop-fun">Spring AOP fun!</a></li>
     <li><a href="#erroneous-behavior">Erroneous behavior</a></li>
     <li><a href="#digging-in">Digging in</a></li>
     <li><a href="#solution">Solution</a></li>

@@ -1698,10 +1698,10 @@
 </div>
 
       <h2 id="introduction">Introduction</h2>
-<p>We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach but it goes without saying that it also introduces some new problems that need our attention.</p>
+<p>We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach, but it goes without saying that it also introduces some new problems that need our attention.</p>
 <p>One of those is fault tolerance. For example, what happens when one of the services degrades in performance? If you don&rsquo;t take any measures the application that makes the calls to that &ldquo;problematic&rdquo; service will start experiencing long timeouts and might even go down if threads accumulate while waiting for a response. You need to have some safeguards in-place.</p>
 <p>It&rsquo;s so common of a problem that there are open source tools available like <code>Hystix</code> (<a href="https://github.com/Netflix/Hystrix">https://github.com/Netflix/Hystrix</a>) and <code>resilience4j</code> (<a href="https://github.com/resilience4j/resilience4j">https://github.com/resilience4j/resilience4j</a>) that deal with it. And most of the times taking advantage of such battle-tested tools is the way to go.</p>
-<p>Here, we&rsquo;ll take a look at what might lurk inside such a fault-tolerant library. Think of it more like an exercise but it can also prove useful if you need something in-place without adding more dependencies in an existing library-bloated application. (Anyone having lived through JAR hell <a href="https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell">https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell</a> can relate to that)</p>
+<p>Here, we&rsquo;ll look at what might lurk inside such a fault-tolerant library. Think of it more like an exercise but it can also prove useful if you need something in-place without adding more dependencies in an existing library-bloated application. (Anyone having lived through JAR hell <a href="https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell">https://en.wikipedia.org/wiki/Java_Classloader#JAR_hell</a> can relate to that)</p>
 <p>The basic ideas behind this are described in <a href="https://github.com/Netflix/Hystrix/wiki#how-does-hystrix-accomplish-its-goals">https://github.com/Netflix/Hystrix/wiki#how-does-hystrix-accomplish-its-goals</a></p>
 <h2 id="initial-take">Initial take</h2>
 <p>Imagine a scenario where you have a web application running on an application server like Apache Tomcat.  Every click on the website is picked up by a thread from Tomcat&rsquo;s thread pool. At some point, in order to accomplish a task it has to communicate with a Service through an API call like</p>
@@ -1752,15 +1752,17 @@
 <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">COMPUTATION_TIMEOUT</span><span class="o">,</span> <span class="n">TimeUnit</span><span class="o">.</span><span class="na">SECONDS</span><span class="o">);</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>If that was written in plain English it&rsquo;d go like</p>
+</div><p>If that was written in plain English, it&rsquo;d go like</p>
 <blockquote>
-<p style="text-align: left;">"Look, I won't allow your Service to bring me down. You can have at most 10 simultaneous requests to the 
-Service but no more. And each one of these will be allowed a max of 5 sec to complete. If it does not complete in 5sec you'll get a 
-`TimeoutException` and the Tomcat thread will be allowed to return immediately."</p>
+<p style="text-align: left;">"Look, I won't allow your Service to bring me down. You can 
+have at most 10 simultaneous requests to the Service but no more. And each one of 
+these will be allowed a max of 5 sec to complete. If it does not complete in 5sec you'll 
+get a `TimeoutException` and the Tomcat thread will be allowed to return 
+immediately."</p>
 </blockquote>
 <p>This is certainly a step in the right direction but we still have a blind spot here. What happens if there&rsquo;s a surge of activity and these 10 threads are not enough to handle the extra traffic? Checking the JavaDoc of <code>.newFixedThreadPool()</code> it appears that Java will add those extra tasks into an unbounded queue. The word unbounded just smells trouble. We might end-up putting extreme pressure on the web server by letting this queue go wild. Now, what are our options?</p>
 <h2 id="one-step-further">One step further</h2>
-<p>Depending on your use-case it might be proper to define a different strategy for queuing. For example rejecting the incoming requests when all threads are busy might be a viable solution. For example If you click to reserve a room or perform a search operation you can still get a message &ldquo;Please retry&rdquo; and issue the command again.</p>
+<p>Depending on your use-case it might be proper to define a different strategy for queuing. One such is rejecting the incoming requests when all threads are busy might be a viable solution. For example, If you click to reserve a room or perform a search operation you can still get a message &ldquo;Please retry&rdquo; and issue the command again.</p>
 <p>Thankfully you can configure this behavior by introducing a custom <code>ThreadPoolExecutor</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1783,9 +1785,11 @@ Service but no more. And each one of these will be allowed a max of 5 sec to com
 </div><p>The above example creates a <code>DirectHandOff</code> type pool. Having<br />
 <code>corePoolSize=20, maxNumThreads=100, keepAliveTime=1, keepAliveTimeUnit=TimeUnit.MINUTES, queue=new SynchronousQueue&lt;&gt;()</code> the above translates into English as follows</p>
 <blockquote>
-<p>&quot; The pool starts with 20 threads. If all 20 threads are busy and new requests keep coming in, new threads will be spawned till the upper<br />
-limit of 100 threads is reached. If all 100 threads are busy new requests will be rejected with a <code>RejectedExecutionException</code>. If the load<br />
-decreases the pool will start killing the threads that sit idle for more than 1min until it goes back to 20 threads.&quot;</p>
+<p style="text-align: left;">"The pool starts with 20 threads. If all 20 threads are busy 
+and new requests keep coming in, new threads will be spawned till the upper limit of 
+100 threads is reached. If all 100 threads are busy new requests will be rejected with a 
+`RejectedExecutionException`. If the load decreases the pool will start killing the 
+threads that sit idle for more than 1min until it goes back to 20 threads."</p>
 </blockquote>
 <p>A nice &ldquo;side-effect&rdquo; of the above <code>ThreadPoolExecutor</code> is that the size of the pool is adaptable to the web server&rsquo;s traffic by fluctuating between <code>corePoolSize</code> and <code>maxNumThreads</code> depending on the load.</p>
 <p>One last thing. In practice it&rsquo;s also useful to give names to those threads. You can thank yourself later while debugging and reading thread dumps. A custom <code>ThreadPoolExecutor</code> is all that is needed</p>
@@ -1818,7 +1822,7 @@ decreases the pool will start killing the threads that sit idle for more than 1m
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="linking-your-work-to-a-circuit-breaker">Linking your work to a circuit breaker</h2>
-<p>Finally, after all of the above are setup properly you can combine your new thread pool with a circuit breaker. A simplified circuit breaker records successes and failures and has 2 corresponding thresholds. When there are FAILURE_THRESHOLD number of consecutive failed requests the circuit is open, meaning new requests are not forwarded to the service. The circuit remains semi-open for DELAY number of TIME_UNIT. Once you get SUCCESS_THRESHOLD number of consecutive successful request the circuit will move from semi-open to close and communication with the service resumes normally.<br />
+<p>Finally, after all the above are setup properly you can combine your new thread pool with a circuit breaker. A simplified circuit breaker records successes and failures and has 2 corresponding thresholds. When there are FAILURE_THRESHOLD number of consecutive failed requests the circuit is open, meaning new requests are not forwarded to the service. The circuit remains semi-open for DELAY number of TIME_UNIT. Once you get SUCCESS_THRESHOLD number of consecutive successful request the circuit will move from semi-open to close and communication with the service resumes normally.<br />
 The only thing that needs care is when to increase the counter of failed requests. Usually certain exceptions should be taken into account, in our case these include <code>RejectedExecutionException</code> and <code>TimeoutException</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

@@ -49,7 +49,7 @@
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Fri, 28 Jan 2022 21:45:06 +0900</atom:modified>
         <guid>https://zisistach.org/posts/05_fault_tolerance/</guid>
-        <description>Introduction We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach but it goes without saying that it also introduces some new problems that need our attention.
+        <description>Introduction We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach, but it goes without saying that it also introduces some new problems that need our attention.
 One of those is fault tolerance. For example, what happens when one of the services degrades in performance? If you don&amp;rsquo;t take any measures the application that makes the calls to that &amp;ldquo;problematic&amp;rdquo; service will start experiencing long timeouts and might even go down if threads accumulate while waiting for a response.</description>
         
         <dc:creator>Zisis</dc:creator>

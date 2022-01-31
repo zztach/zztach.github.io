@@ -1649,7 +1649,7 @@
 <div class="single__infos">
   <time class="single__info" title="Written At">📅&nbsp;Mar 11, 2018 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;4&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;6&nbsp;min read </span>
   
   &nbsp;&middot;&nbsp; <span class="single__info" title="WRITTEN BY">🏍&nbsp;Zisis</span>
   
@@ -1690,9 +1690,12 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a></li>
-    <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
-    <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
+    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a>
+      <ul>
+        <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
+        <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
+      </ul>
+    </li>
     <li><a href="#improving-search-throughput">Improving search throughput</a>
       <ul>
         <li><a href="#adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</a></li>
@@ -1710,18 +1713,18 @@
 </div>
 
       <h2 id="introduction">Introduction</h2>
-<p>Most of the recommendations presented below are coming directly from the web (StackOverflow, Solr wiki, Solr Jira, Solr mailing list), while some others required a lot of testing and debugging in order to reach a solution. This post is about keeping them all in a common place with the hope of helping someone out there having similar issues. It’s also nowhere complete. In this post we’ll focus on SolrCloud stability and search performance. There are more Solr performance related storied to tell.</p>
+<p>In this post we’ll focus on SolrCloud stability and search performance. Most of the lessons have been learned the hard way, fighting them on production some times. The list is nowhere complete and rest assured that there are more Solr performance related storied to tell. Take notte that the ones discussed below are not covered in great detail as it&rsquo;d make a very long post. Some of them are even worth their own individual post.</p>
 <h2 id="potential-issues-causing-cluster-instability">Potential issues causing cluster instability</h2>
 <p>The following points fall under the “abusing Solr” category. The same way that JOIN functionality provided by RDBMs does not mean that all the JOIN queries you can imagine will be performant, there are some usages of Solr that are not ideal performance-wise.</p>
-<h2 id="avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</h2>
-<p>Avoid setting Integer.MAX or high values (usually when doing paging with start and rows params) in .setRows() call when preparing a SolrQuery. It can wreak havoc to the Solr cluster. Basically Solr tries to allocate as much memory as indicated in the param passed to .setRows(), not a good thing. Haven’t seen it with my own eyes happening but others have. Check Solr Wiki and Statsbiblioteket.<br />
+<h3 id="avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</h3>
+<p>Avoid setting <code>Integer.MAX</code> or high values (usually when doing paging with start and rows params) in <code>.setRows()</code> call when preparing a <code>SolrQuery</code>. It can wreak havoc to the Solr cluster. Basically Solr tries to allocate as much memory as indicated in the parameter passed to .setRows(), not a good thing. Haven’t seen it with my own eyes happening but others have. Check Solr Wiki and Statsbiblioteket.<br />
 Alternatives:</p>
 <ul>
 <li>For real-time requests first get the # of docs in the index and pass this to .setRows() instead. For calls that you know what to expect just pass the expected number of results.</li>
-<li>For “next-page” functionality and offline procedures cursorMark can be utilized.</li>
+<li>For “next-page” functionality and offline procedures <code>cursorMark</code> can be utilized.</li>
 </ul>
-<h2 id="avoid-using-deletebyquery">Avoid using deleteByQuery</h2>
-<p>Calling intermixed calls to indexing and deleteByQuery is just asking for trouble. If you witness seemingly random replicas crashes and/or getting in recovery mode it might be related to deleteByQuery interspersed with indexing requests.</p>
+<h3 id="avoid-using-deletebyquery">Avoid using deleteByQuery</h3>
+<p>Mixing indexing calls with <code>deleteByQuery()</code> commands is just asking for trouble. If you witness seemingly random replicas crashes and/or getting in recovery mode it might be related to deleteByQuery interspersed with indexing requests.</p>
 <p>Alternatives:</p>
 <ul>
 <li>Make use of deleteById() directly if possible.</li>
@@ -1730,19 +1733,29 @@ Alternatives:</p>
 </ul>
 <h2 id="improving-search-throughput">Improving search throughput</h2>
 <h3 id="adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</h3>
-<p>The story has as follows. Search on a single-sharded SolrCloud setup with an 10M docs/350GB index and high cardinality fields was slow, especially when faceting was utilized. A simple search from Solr admin page with faceting enabled could take ~1.5sec.After the index was split into 8 shards the same query’s response time dropped to ~200msec! That’s great I thought, problem solved. But it wasn’t to be. Running a load test showed that after a certain rate (&gt;20QPS) performance dropped dramatically.So, what was going on? At first I noticed that having more than 2 shards on the same Solr JVM was causing slowness, but I could not figure out why this was happening. The CPUs on the machine were more than enough to server requests in multiple shards. Turns out there’s a property which can be placed inside solr.xml under the HttpShardHandlerFactory node. It’s called maxConnectionsPerHost and increasing that (default value is 20) gives some fresh air to Solr and inter-shard communication and response times are back to expected values (~200msec) even under heavy load.</p>
+<p>The story has as follows. Search on a single-sharded SolrCloud setup with an 10M docs/350GB index and high cardinality fields was slow, especially when faceting was utilized. A simple search from Solr admin page with faceting enabled could take ~1.5sec.After the index was split into 8 shards the same query’s response time dropped to ~200msec! That’s great I thought, problem solved. But it wasn’t to be. Running a load test showed that after a certain rate (&gt;20QPS) performance dropped dramatically.So, what was going on? At first I noticed that having more than 2 shards on the same Solr JVM was causing slowness, but I could not figure out why this was happening. The CPUs on the machine were more than enough to server requests in multiple shards. Turns out there’s a property which can be placed inside solr.xml under the HttpShardHandlerFactory node. It’s called <code>maxConnectionsPerHost</code> and increasing it (default value is 20) gives some fresh air to Solr and inter-shard communication and response times are back to expected values (~200msec) even under heavy load.</p>
 <h3 id="check-your-filtercache-hit-ratio-especially-in-distributed-search">Check your FilterCache hit ratio (especially in distributed search)</h3>
-<p>Searching in a distributed index makes heavy use of the FilterCache that is not evident when searching in a single shard. Faceting especially seems to generate and store multiple entries in FilterCache. In these cases it’s better to configure your FilterCache using maxRamMB as faceting adds multiple entries of small size.</p>
+<p>Searching in a distributed index makes heavy use of the <code>FilterCache</code> that is not evident when searching in a single shard. Faceting in specific seems to generate and store multiple entries in the FilterCache. In these cases it’s better to configure your FilterCache using maxRamMB as faceting adds multiple entries of small size.</p>
 <h3 id="profile-indexingsearch-and-pay-attention-to-your-custom-analyzerstokenizersfilters">Profile indexing/search and pay attention to your custom analyzers/tokenizers/filters</h3>
 <p>You don’t really need any exotic tools for this one. Tools provided by the JDK (like JVisualVM) can monitor threads/memory activity while you index/search. Look for your custom classes and how much time is spent on them.</p>
 <h3 id="if-you-have-gc-choking-issues-try-the-g1-collector">If you have GC choking issues, try the G1 collector.</h3>
-<p>It can do miracles. Witnessed a setup where the default collector used by Solr could not cope with the load after some time. Just switching to G1 fixed things.</p>
+<p>It can do miracles. Witnessed a setup where the default collector used by SolrCloud could not cope with the load after some time. Just switching to G1 fixed things. GC tuning is very dependent on each use case so below only the most important parameters are mentioned. These include</p>
+<ul>
+<li><code>-XX:+ParallelRefProcEnabled</code>,  enable it when Ref Proc and Ref Enq phases take too much time. More details at <a href="https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector-tuning.htm#JSGCT-GUID-90E30ACA-8040-432E-B3A0-1E0440AB556A">https://docs.oracle.com/javase/9/gctuning/garbage-first-garbage-collector-tuning.htm#JSGCT-GUID-90E30ACA-8040-432E-B3A0-1E0440AB556A</a></li>
+<li><code>-XX:MaxGCPauseMillis</code> the maximum GC pause duration that G1 should try to achieve. Don&rsquo;t be too optimistic on this one and set a very low value as G1 might struggle in trying to keep up.</li>
+<li><code>-XX:ParallelGCThreads</code> which sets the number of threads used during parallel phases of the garbage collectors. If you have the CPU try to increase it, it can have a big impact on performance.</li>
+<li><code>-XX:G1HeapRegionSize</code> which is depended on the total heap space allocated. The target is to have ~2048 G1 regions according to the official documentation at <a href="http://www.oracle.com/technetwork/articles/java/g1gc-1984535.html">http://www.oracle.com/technetwork/articles/java/g1gc-1984535.html</a></li>
+</ul>
 <h3 id="utilize-facetthreads">Utilize facet.threads</h3>
-<p>In practice the use of facet.threads has improved search response times when faceting is enabled but still sharding the index will probably yield better response times for faceting and search in general.  There’s no point in setting this variable a higher value than the # of fields you are faceting on. It should at most be equal to the # of faceting fields.</p>
+<p>In practice the use of <code>facet.threads</code> has improved search response times when faceting is enabled but still sharding the index will probably yield better response times for faceting and search in general.  There’s no point in setting this variable a higher value than the # of fields you are faceting on. It should at most be equal to the # of faceting fields.</p>
 <h3 id="use-docvalues-for-faceting">Use DocValues for faceting</h3>
 <p>This comes directly from Solr Documentation, although I don’t have any serious metrics I’ll take their word for it.</p>
 <h3 id="pay-attention-to-your-deleted-documents">Pay attention to your deleted documents</h3>
-<p>Maybe you have a perfectly healthy SolrCloud instance which performs great. Time goes on and after a few months you notice a dramatic degradation in search performance. Code is the same, hardware is the same. It’s time to have a look at the percentage of the deleted documents in your index. They might be responsible for this degradation and you have to somehow get rid of them. Segments handling in Lucene/Solr as well as handling of deleted documents is a black art (or black magic for that matter). More info can be found at <a href="https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/">https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/</a>.</p>
+<p>Maybe you have a perfectly healthy SolrCloud instance which performs great. Time goes by and after a few months you notice a dramatic degradation in search performance. Code is the same, hardware is the same, traffic is the same, query and indexing patterns are the same. It’s time to have a look at the percentage of the deleted documents in your index. It might be responsible for this degradation and you have to somehow limit it.</p>
+<p>Lucene - and therefore Solr - make use of certain append-only data structures when storing terms that in the index segments. More details on the underlying data structures (SSTables), how they work and what are the benefits can be found in Chapter 3 of the great <code>Designing Data-Intensive Applications</code> book (<a href="https://dataintensive.net/">https://dataintensive.net/</a>)</p>
+<p>This means that whenever something is deleted it is just marked as such and it&rsquo;s not actually removed from the index. Unsurprisingly your index size grows, as more and more documents are getting deleted. And if that wasn&rsquo;t enough, your search queries are also getting slower as the reader has to traverse more documents. In the meantime, the so-called merger that runs periodically in the background is responsible for merging segments (and removing the deleted entries) once the deletion ratio goes above a certain threshold. But for some use-cases this value might prove to be too high and it&rsquo;s not configurable.</p>
+<p>Segments handling in Lucene/Solr as well as handling of deleted documents is a black art (or black magic for that matter). More info on how merging can be enforced at <a href="https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/">https://sematext.com/blog/solr-optimize-is-not-bad-for-you-lucene-solr-revolution/</a>. There is an HTTP API that can get you out of this mess. In later versions support is coming for configuring this threshold.</p>
+<p><strong>Note:</strong> All of the above were tested on SolrCloud 7.4.1, so some of those hints may not be applicable in recent versions.</p>
 
     </article>
     
@@ -2477,9 +2490,12 @@ document.addEventListener('DOMContentLoaded', function () {
     <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a></li>
-    <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
-    <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
+    <li><a href="#potential-issues-causing-cluster-instability">Potential issues causing cluster instability</a>
+      <ul>
+        <li><a href="#avoid-search-calls-using-setrowsintegermax">Avoid search calls using .setRows(Integer.MAX)</a></li>
+        <li><a href="#avoid-using-deletebyquery">Avoid using deleteByQuery</a></li>
+      </ul>
+    </li>
     <li><a href="#improving-search-throughput">Improving search throughput</a>
       <ul>
         <li><a href="#adjust-maxconnectionsperhost-to-your-needs">Adjust maxConnectionsPerHost to your needs</a></li>

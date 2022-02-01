@@ -1782,7 +1782,7 @@ immediately."</p>
 
 </code></pre></td></tr></table>
 </div>
-</div><p>The above example creates a <code>DirectHandOff</code> type pool. Having<br />
+</div><p>The above example creates a <code>DirectHandOff</code> type pool. Having <br />
 <code>corePoolSize=20, maxNumThreads=100, keepAliveTime=1, keepAliveTimeUnit=TimeUnit.MINUTES, queue=new SynchronousQueue&lt;&gt;()</code> the above translates into English as follows</p>
 <blockquote>
 <p style="text-align: left;">"The pool starts with 20 threads. If all 20 threads are busy 
@@ -1822,7 +1822,7 @@ threads that sit idle for more than 1min until it goes back to 20 threads."</p>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="linking-your-work-to-a-circuit-breaker">Linking your work to a circuit breaker</h2>
-<p>Finally, after all the above are setup properly you can combine your new thread pool with a circuit breaker. A simplified circuit breaker records successes and failures and has 2 corresponding thresholds. When there are FAILURE_THRESHOLD number of consecutive failed requests the circuit is open, meaning new requests are not forwarded to the service. The circuit remains semi-open for DELAY number of TIME_UNIT. Once you get SUCCESS_THRESHOLD number of consecutive successful request the circuit will move from semi-open to close and communication with the service resumes normally.<br />
+<p>Finally, after all the above are setup properly you can combine your new thread pool with a circuit breaker. A simplified circuit breaker records successes and failures and has 2 corresponding thresholds. When there are FAILURE_THRESHOLD number of consecutive failed requests the circuit is open, meaning new requests are not forwarded to the service. The circuit remains semi-open for DELAY number of TIME_UNIT. Once you get SUCCESS_THRESHOLD number of consecutive successful request the circuit will move from semi-open to close and communication with the service resumes normally. <br />
 The only thing that needs care is when to increase the counter of failed requests. Usually certain exceptions should be taken into account, in our case these include <code>RejectedExecutionException</code> and <code>TimeoutException</code>.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

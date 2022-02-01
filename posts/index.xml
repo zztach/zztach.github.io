@@ -14,12 +14,53 @@
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 28 Jan 2022 21:45:06 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://zisistach.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>The Unseen Glue</title>
+        <link>https://zisistach.org/posts/06_the_unseen_glue/</link>
+        <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Mon, 31 Jan 2022 21:45:06 +0900</atom:modified>
+        <guid>https://zisistach.org/posts/06_the_unseen_glue/</guid>
+        <description>Introduction There&amp;rsquo;s a lot of talk since the COVID-19 outbreak around remote work. Some argue that they are more productive while others have reached to a burn-out point. The reality is that every one of us is different and values different things. Some people do miss human interaction, while for others the fact that they don&amp;rsquo;t have to come close to another human being again is godsend.
+But how could face-to-face human interaction - or the lack of it - affect a team?</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://zisistach.orgimages/article-icons/1-stand.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>empathy</category>
+            
+          
+            
+              <category>remote</category>
+            
+          
+        
+        
+          
+            
+              <category>Team work</category>
+            
+          
+        
+        
+          
+            
+              <category>Human Factor</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>Fault tolerant services</title>

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Human Factor on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/series/human-factor/</link>
+    <link>https://zztach.github.io/series/human-factor/</link>
     <description>Recent content in Human Factor on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,22 +17,22 @@
     <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zisistach.org/series/human-factor/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zztach.github.io/series/human-factor/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>The Unseen Glue</title>
-        <link>https://zisistach.org/posts/06_the_unseen_glue/</link>
+        <link>https://zztach.github.io/posts/06_the_unseen_glue/</link>
         <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Mon, 31 Jan 2022 21:45:06 +0900</atom:modified>
-        <guid>https://zisistach.org/posts/06_the_unseen_glue/</guid>
+        <guid>https://zztach.github.io/posts/06_the_unseen_glue/</guid>
         <description>Introduction There&amp;rsquo;s a lot of talk since the COVID-19 outbreak around remote work. Some argue that they are more productive while others have reached to a burn-out point. The reality is that every one of us is different and values different things. Some people do miss human interaction, while for others the fact that they don&amp;rsquo;t have to come close to another human being again is godsend.
 But how could face-to-face human interaction - or the lack of it - affect a team?</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.orgimages/article-icons/1-stand.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zztach.github.ioimages/article-icons/1-stand.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

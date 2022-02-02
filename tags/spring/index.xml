@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>spring on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/tags/spring/</link>
+    <link>https://zztach.github.io/tags/spring/</link>
     <description>Recent content in spring on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,21 +17,21 @@
     <lastBuildDate>Wed, 14 Sep 2011 12:00:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zisistach.org/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zztach.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Spring AOP &amp; Bean Naming conflict</title>
-        <link>https://zisistach.org/posts/01_spring-aop-bug/</link>
+        <link>https://zztach.github.io/posts/01_spring-aop-bug/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Wed, 14 Sep 2011 12:00:06 +0900</atom:modified>
-        <guid>https://zisistach.org/posts/01_spring-aop-bug/</guid>
+        <guid>https://zztach.github.io/posts/01_spring-aop-bug/</guid>
         <description>Spring AOP fun! My everyday life at work involves dealing with several Java frameworks such as Spring, Hibernate and JSF among others. Most frameworks Take Spring for example. IT removes a lot of burden from the developer and gets you up to speed fast but in order to achieve this it makes a lot of conventions. This is not bad per-se but it can turn into an ugly beast at times - notably for the uninitiated - when trying to decipher what is wrong in your application.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.orgimages/article-icons/1-bug.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zztach.github.ioimages/article-icons/1-bug.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

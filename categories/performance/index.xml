@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Performance on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/categories/performance/</link>
+    <link>https://zztach.github.io/categories/performance/</link>
     <description>Recent content in Performance on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,21 +17,21 @@
     <lastBuildDate>Sun, 11 Mar 2018 12:00:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zisistach.org/categories/performance/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zztach.github.io/categories/performance/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>SolrCloud performance tuning</title>
-        <link>https://zisistach.org/posts/03_solr_performance/</link>
+        <link>https://zztach.github.io/posts/03_solr_performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Sun, 11 Mar 2018 12:00:06 +0900</atom:modified>
-        <guid>https://zisistach.org/posts/03_solr_performance/</guid>
+        <guid>https://zztach.github.io/posts/03_solr_performance/</guid>
         <description>Introduction In this post we’ll focus on SolrCloud stability and search performance. Most of the lessons have been learned the hard way, fighting them on production some times. The list is nowhere complete and rest assured that there are more Solr performance related storied to tell. Take notte that the ones discussed below are not covered in great detail as it&amp;rsquo;d make a very long post. Some of them are even worth their own individual post.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zisistach.orgimages/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://zztach.github.ioimages/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

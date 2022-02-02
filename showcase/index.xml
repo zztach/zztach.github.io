@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Showcase overview on Zisis Tachtsidis</title>
-    <link>https://zisistach.org/showcase/</link>
+    <link>https://zztach.github.io/showcase/</link>
     <description>Recent content in Showcase overview on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,17 +17,17 @@
     <lastBuildDate>Sun, 19 Jan 2020 15:43:38 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zisistach.org/showcase/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://zztach.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Android</title>
-        <link>https://zisistach.org/showcase/android/</link>
+        <link>https://zztach.github.io/showcase/android/</link>
         <pubDate>Sun, 19 Jan 2020 21:04:11 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Sun, 19 Jan 2020 21:04:11 +0900</atom:modified>
-        <guid>https://zisistach.org/showcase/android/</guid>
+        <guid>https://zztach.github.io/showcase/android/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

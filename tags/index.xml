@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Tags on Zisis Tachtsidis</title>
-    <link>https://zztach.github.io/tags/</link>
+    <link>https://www.zisistach.org/tags/</link>
     <description>Recent content in Tags on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,17 +17,17 @@
     <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zztach.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.zisistach.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>empathy</title>
-        <link>https://zztach.github.io/tags/empathy/</link>
+        <link>https://www.zisistach.org/tags/empathy/</link>
         <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/empathy/</guid>
+        <guid>https://www.zisistach.org/tags/empathy/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -41,11 +41,11 @@
       
       <item>
         <title>remote</title>
-        <link>https://zztach.github.io/tags/remote/</link>
+        <link>https://www.zisistach.org/tags/remote/</link>
         <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/remote/</guid>
+        <guid>https://www.zisistach.org/tags/remote/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -59,11 +59,11 @@
       
       <item>
         <title>concurrency</title>
-        <link>https://zztach.github.io/tags/concurrency/</link>
+        <link>https://www.zisistach.org/tags/concurrency/</link>
         <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/concurrency/</guid>
+        <guid>https://www.zisistach.org/tags/concurrency/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -77,11 +77,11 @@
       
       <item>
         <title>distributed</title>
-        <link>https://zztach.github.io/tags/distributed/</link>
+        <link>https://www.zisistach.org/tags/distributed/</link>
         <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/distributed/</guid>
+        <guid>https://www.zisistach.org/tags/distributed/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -95,11 +95,11 @@
       
       <item>
         <title>java</title>
-        <link>https://zztach.github.io/tags/java/</link>
+        <link>https://www.zisistach.org/tags/java/</link>
         <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/java/</guid>
+        <guid>https://www.zisistach.org/tags/java/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -113,11 +113,11 @@
       
       <item>
         <title>lucene</title>
-        <link>https://zztach.github.io/tags/lucene/</link>
+        <link>https://www.zisistach.org/tags/lucene/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/lucene/</guid>
+        <guid>https://www.zisistach.org/tags/lucene/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -131,11 +131,11 @@
       
       <item>
         <title>performance</title>
-        <link>https://zztach.github.io/tags/performance/</link>
+        <link>https://www.zisistach.org/tags/performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/performance/</guid>
+        <guid>https://www.zisistach.org/tags/performance/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -149,11 +149,11 @@
       
       <item>
         <title>solrcloud</title>
-        <link>https://zztach.github.io/tags/solrcloud/</link>
+        <link>https://www.zisistach.org/tags/solrcloud/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/solrcloud/</guid>
+        <guid>https://www.zisistach.org/tags/solrcloud/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -167,11 +167,11 @@
       
       <item>
         <title>c&#43;&#43;</title>
-        <link>https://zztach.github.io/tags/c&#43;&#43;/</link>
+        <link>https://www.zisistach.org/tags/c&#43;&#43;/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/c&#43;&#43;/</guid>
+        <guid>https://www.zisistach.org/tags/c&#43;&#43;/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -185,11 +185,11 @@
       
       <item>
         <title>mac</title>
-        <link>https://zztach.github.io/tags/mac/</link>
+        <link>https://www.zisistach.org/tags/mac/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/mac/</guid>
+        <guid>https://www.zisistach.org/tags/mac/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -203,11 +203,11 @@
       
       <item>
         <title>opengl</title>
-        <link>https://zztach.github.io/tags/opengl/</link>
+        <link>https://www.zisistach.org/tags/opengl/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/opengl/</guid>
+        <guid>https://www.zisistach.org/tags/opengl/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -221,11 +221,11 @@
       
       <item>
         <title>aop</title>
-        <link>https://zztach.github.io/tags/aop/</link>
+        <link>https://www.zisistach.org/tags/aop/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/aop/</guid>
+        <guid>https://www.zisistach.org/tags/aop/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -239,11 +239,11 @@
       
       <item>
         <title>spring</title>
-        <link>https://zztach.github.io/tags/spring/</link>
+        <link>https://www.zisistach.org/tags/spring/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/spring/</guid>
+        <guid>https://www.zisistach.org/tags/spring/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -257,11 +257,11 @@
       
       <item>
         <title>index</title>
-        <link>https://zztach.github.io/tags/index/</link>
+        <link>https://www.zisistach.org/tags/index/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/tags/index/</guid>
+        <guid>https://www.zisistach.org/tags/index/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

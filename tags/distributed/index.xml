@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>distributed on Zisis Tachtsidis</title>
-    <link>https://zztach.github.io/tags/distributed/</link>
+    <link>https://www.zisistach.org/tags/distributed/</link>
     <description>Recent content in distributed on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,22 +17,22 @@
     <lastBuildDate>Fri, 28 Jan 2022 21:45:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zztach.github.io/tags/distributed/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.zisistach.org/tags/distributed/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Fault tolerant services</title>
-        <link>https://zztach.github.io/posts/05_fault_tolerance/</link>
+        <link>https://www.zisistach.org/posts/05_fault_tolerance/</link>
         <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Fri, 28 Jan 2022 21:45:06 +0900</atom:modified>
-        <guid>https://zztach.github.io/posts/05_fault_tolerance/</guid>
+        <guid>https://www.zisistach.org/posts/05_fault_tolerance/</guid>
         <description>Introduction We live in a software world where distributed applications are common. They usually include lots of independently deployed services that communicate with each other. Sure, there are many benefits from this approach, but it goes without saying that it also introduces some new problems that need our attention.
 One of those is fault tolerance. For example, what happens when one of the services degrades in performance? If you don&amp;rsquo;t take any measures the application that makes the calls to that &amp;ldquo;problematic&amp;rdquo; service will start experiencing long timeouts and might even go down if threads accumulate while waiting for a response.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zztach.github.ioimages/article-icons/1-solid.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://www.zisistach.orgimages/article-icons/1-solid.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         
@@ -68,15 +68,15 @@ One of those is fault tolerance. For example, what happens when one of the servi
       
       <item>
         <title>SolrCloud performance tuning</title>
-        <link>https://zztach.github.io/posts/03_solr_performance/</link>
+        <link>https://www.zisistach.org/posts/03_solr_performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Sun, 11 Mar 2018 12:00:06 +0900</atom:modified>
-        <guid>https://zztach.github.io/posts/03_solr_performance/</guid>
-        <description>Introduction In this post we’ll focus on SolrCloud stability and search performance. Most of the lessons have been learned the hard way, fighting them on production some times. The list is nowhere complete and rest assured that there are more Solr performance related storied to tell. Take notte that the ones discussed below are not covered in great detail as it&amp;rsquo;d make a very long post. Some of them are even worth their own individual post.</description>
+        <guid>https://www.zisistach.org/posts/03_solr_performance/</guid>
+        <description>Introduction In this post we’ll focus on SolrCloud stability and search performance. Most of the lessons have been learned the hard way, fighting them on production. The list is nowhere complete and rest assured that there are more Solr performance related storied to tell. Take note that the ones discussed below are not covered in great detail as it&amp;rsquo;d make a very long post. Some of them are even worth their own individual post.</description>
         
         <dc:creator>Zisis</dc:creator>
-        <media:content url="https://zztach.github.ioimages/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        <media:content url="https://www.zisistach.orgimages/article-icons/1-performance.png" medium="image"><media:title type="html">featured image</media:title></media:content>
         
         
         

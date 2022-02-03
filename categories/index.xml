@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Categories on Zisis Tachtsidis</title>
-    <link>https://zztach.github.io/categories/</link>
+    <link>https://www.zisistach.org/categories/</link>
     <description>Recent content in Categories on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,17 +17,17 @@
     <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zztach.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.zisistach.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Team work</title>
-        <link>https://zztach.github.io/categories/team-work/</link>
+        <link>https://www.zisistach.org/categories/team-work/</link>
         <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/categories/team-work/</guid>
+        <guid>https://www.zisistach.org/categories/team-work/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -41,11 +41,11 @@
       
       <item>
         <title>Robustness</title>
-        <link>https://zztach.github.io/categories/robustness/</link>
+        <link>https://www.zisistach.org/categories/robustness/</link>
         <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/categories/robustness/</guid>
+        <guid>https://www.zisistach.org/categories/robustness/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -59,11 +59,11 @@
       
       <item>
         <title>Performance</title>
-        <link>https://zztach.github.io/categories/performance/</link>
+        <link>https://www.zisistach.org/categories/performance/</link>
         <pubDate>Sun, 11 Mar 2018 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/categories/performance/</guid>
+        <guid>https://www.zisistach.org/categories/performance/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -77,11 +77,11 @@
       
       <item>
         <title>Setup</title>
-        <link>https://zztach.github.io/categories/setup/</link>
+        <link>https://www.zisistach.org/categories/setup/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/categories/setup/</guid>
+        <guid>https://www.zisistach.org/categories/setup/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -95,11 +95,11 @@
       
       <item>
         <title>Interesting Bug</title>
-        <link>https://zztach.github.io/categories/interesting-bug/</link>
+        <link>https://www.zisistach.org/categories/interesting-bug/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://zztach.github.io/categories/interesting-bug/</guid>
+        <guid>https://www.zisistach.org/categories/interesting-bug/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>article on Zisis Tachtsidis</title>
-    <link>https://zztach.github.io/publication/article/</link>
+    <link>https://www.zisistach.org/publication/article/</link>
     <description>Recent content in article on Zisis Tachtsidis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -17,17 +17,17 @@
     <lastBuildDate>Thu, 05 Mar 2020 14:08:48 +0000</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
-        <atom:link href="https://zztach.github.io/publication/article/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.zisistach.org/publication/article/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Good Title</title>
-        <link>https://zztach.github.io/publication/article/article_any_folder_name_1/</link>
+        <link>https://www.zisistach.org/publication/article/article_any_folder_name_1/</link>
         <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Fri, 01 Jun 2018 00:00:00 +0000</atom:modified>
-        <guid>https://zztach.github.io/publication/article/article_any_folder_name_1/</guid>
+        <guid>https://www.zisistach.org/publication/article/article_any_folder_name_1/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

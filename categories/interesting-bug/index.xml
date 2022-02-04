@@ -23,11 +23,11 @@
       
       <item>
         <title>Spring AOP &amp; Bean Naming conflict</title>
-        <link>https://www.zisistach.org/posts/01_spring-aop-bug/</link>
+        <link>https://www.zisistach.org/posts/spring-aop-bug/</link>
         <pubDate>Wed, 14 Sep 2011 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Wed, 14 Sep 2011 12:00:06 +0900</atom:modified>
-        <guid>https://www.zisistach.org/posts/01_spring-aop-bug/</guid>
+        <guid>https://www.zisistach.org/posts/spring-aop-bug/</guid>
         <description>Spring AOP fun! My everyday life at work involves dealing with several Java frameworks such as Spring, Hibernate and JSF among others. Most frameworks Take Spring for example. IT removes a lot of burden from the developer and gets you up to speed fast but in order to achieve this it makes a lot of conventions. This is not bad per-se but it can turn into an ugly beast at times - notably for the uninitiated - when trying to decipher what is wrong in your application.</description>
         
         <dc:creator>Zisis</dc:creator>

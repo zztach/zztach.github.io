@@ -32,7 +32,7 @@
     <loc>https://www.zisistach.org/categories/team-work/</loc>
     <lastmod>2022-01-31T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/06_the_unseen_glue/</loc>
+    <loc>https://www.zisistach.org/posts/the-unseen-glue/</loc>
     <lastmod>2022-01-31T21:45:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/tags/concurrency/</loc>
@@ -41,7 +41,7 @@
     <loc>https://www.zisistach.org/tags/distributed/</loc>
     <lastmod>2022-01-28T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/05_fault_tolerance/</loc>
+    <loc>https://www.zisistach.org/posts/fault-tolerance/</loc>
     <lastmod>2022-01-28T21:45:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/tags/java/</loc>
@@ -53,7 +53,7 @@
     <loc>https://www.zisistach.org/series/software/</loc>
     <lastmod>2022-01-28T21:45:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/04_be_gentle_to_interruptions/</loc>
+    <loc>https://www.zisistach.org/posts/be-gentle-to-interruptions/</loc>
     <lastmod>2022-01-26T21:45:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/publication/article/</loc>
@@ -95,7 +95,7 @@
     <loc>https://www.zisistach.org/tags/solrcloud/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/03_solr_performance/</loc>
+    <loc>https://www.zisistach.org/posts/solr-performance/</loc>
     <lastmod>2018-03-11T12:00:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/publication/book/book_any_folder_name_1/</loc>
@@ -110,7 +110,7 @@
     <loc>https://www.zisistach.org/tags/mac/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/02_mac_opengl/</loc>
+    <loc>https://www.zisistach.org/posts/mac-opengl/</loc>
     <lastmod>2013-03-13T12:00:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/tags/opengl/</loc>
@@ -128,7 +128,7 @@
     <loc>https://www.zisistach.org/tags/spring/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
-    <loc>https://www.zisistach.org/posts/01_spring-aop-bug/</loc>
+    <loc>https://www.zisistach.org/posts/spring-aop-bug/</loc>
     <lastmod>2011-09-14T12:00:06+09:00</lastmod>
   </url><url>
     <loc>https://www.zisistach.org/tags/index/</loc>

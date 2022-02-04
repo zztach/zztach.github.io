@@ -23,11 +23,11 @@
       
       <item>
         <title>MacOS X and OpenGL</title>
-        <link>https://www.zisistach.org/posts/02_mac_opengl/</link>
+        <link>https://www.zisistach.org/posts/mac-opengl/</link>
         <pubDate>Wed, 13 Mar 2013 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         <atom:modified>Wed, 13 Mar 2013 12:00:06 +0900</atom:modified>
-        <guid>https://www.zisistach.org/posts/02_mac_opengl/</guid>
+        <guid>https://www.zisistach.org/posts/mac-opengl/</guid>
         <description>Introduction Here is a guide on configuring an SFML, OpenGL, C++ project under Netbeans in MacOS X. I couldn’t find any similar guide on the net and I encountered some caveats and intricacies while trying to set it up. The lack of a complete guide alone made it worth blogging about.
 First of all, I assume that NetBeans and SFML are already installed on your machine. If not, please go to the corresponding product’s official site and follow the guides there.</description>
         

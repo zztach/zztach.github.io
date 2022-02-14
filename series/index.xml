@@ -14,7 +14,7 @@
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 15 Feb 2022 12:00:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://www.zisistach.org/series/index.xml" rel="self" type="application/rss+xml" />
@@ -22,12 +22,12 @@
 
       
       <item>
-        <title>Human Factor</title>
-        <link>https://www.zisistach.org/series/human-factor/</link>
-        <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
+        <title>Software</title>
+        <link>https://www.zisistach.org/series/software/</link>
+        <pubDate>Tue, 15 Feb 2022 12:00:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://www.zisistach.org/series/human-factor/</guid>
+        <guid>https://www.zisistach.org/series/software/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>
@@ -40,12 +40,12 @@
       </item>
       
       <item>
-        <title>Software</title>
-        <link>https://www.zisistach.org/series/software/</link>
-        <pubDate>Fri, 28 Jan 2022 21:45:06 +0900</pubDate>
+        <title>Human Factor</title>
+        <link>https://www.zisistach.org/series/human-factor/</link>
+        <pubDate>Mon, 31 Jan 2022 21:45:06 +0900</pubDate>
         <author>zistach@runbox.com (Zisis Tachtsidis)</author>
         
-        <guid>https://www.zisistach.org/series/software/</guid>
+        <guid>https://www.zisistach.org/series/human-factor/</guid>
         <description></description>
         
         <dc:creator>Zisis Tachtsidis</dc:creator>

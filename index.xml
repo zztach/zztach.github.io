@@ -14,7 +14,7 @@
     <managingEditor>zistach@runbox.com (Zisis Tachtsidis)</managingEditor>
     <webMaster>zistach@runbox.com (Zisis Tachtsidis)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 31 Jan 2022 21:45:06 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 15 Feb 2022 12:00:06 +0900</lastBuildDate>
     <sy:updatePeriod>daily</sy:updatePeriod>
     
         <atom:link href="https://www.zisistach.org/index.xml" rel="self" type="application/rss+xml" />
@@ -41,6 +41,63 @@
         
       
 
+      
+      <item>
+        <title>Solr Function queries</title>
+        <link>https://www.zisistach.org/posts/solr-function-playground/</link>
+        <pubDate>Tue, 15 Feb 2022 12:00:06 +0900</pubDate>
+        <author>zistach@runbox.com (Zisis Tachtsidis)</author>
+        <atom:modified>Tue, 15 Feb 2022 12:00:06 +0900</atom:modified>
+        <guid>https://www.zisistach.org/posts/solr-function-playground/</guid>
+        <description>Introduction One of the most interesting Solr features is definitely &amp;ldquo;Function Queries&amp;rdquo;. They allow you to dynamically alter the ranking of your documents, by applying functions on existing index fields. More details and a complete list of the available functions are documented at https://solr.apache.org/guide/8_9/function-queries.html
+Use case - Boost recent documents A pretty common requirement on search ranking is to combine the absolute relevancy of results (name it tf/idf, BM25 or whatever) with a boost on most recent documents.</description>
+        
+        <dc:creator>Zisis</dc:creator>
+        <media:content url="https://www.zisistach.orgimages/article-icons/1-function.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>solrcloud</category>
+            
+          
+            
+              <category>solr</category>
+            
+          
+            
+              <category>lucene</category>
+            
+          
+            
+              <category>java</category>
+            
+          
+            
+              <category>function-queries</category>
+            
+          
+            
+              <category>ranking</category>
+            
+          
+        
+        
+          
+            
+              <category>Feature</category>
+            
+          
+        
+        
+          
+            
+              <category>Software</category>
+            
+          
+        
+      </item>
       
       <item>
         <title>The Unseen Glue</title>

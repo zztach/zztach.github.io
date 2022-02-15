@@ -1686,9 +1686,9 @@
 </div>
 
       <h2 id="introduction">Introduction</h2>
-<p>One of the most interesting Solr features is definitely &ldquo;Function Queries&rdquo;. They allow you to dynamically alter the ranking of your documents,  by applying functions on existing index fields. More details and a complete list of the available functions are documented at  <a href="https://solr.apache.org/guide/8_9/function-queries.html">https://solr.apache.org/guide/8_9/function-queries.html</a></p>
+<p>One of the most interesting Solr features is definitely &ldquo;Function Queries&rdquo;. They allow you to dynamically alter the ranking of your documents, by applying functions on existing index fields. More details and a complete list of the available functions are documented at  <a href="https://solr.apache.org/guide/8_9/function-queries.html">https://solr.apache.org/guide/8_9/function-queries.html</a></p>
 <h2 id="use-case---boost-recent-documents">Use case - Boost recent documents</h2>
-<p>A pretty common requirement on search ranking is to combine the absolute relevancy of results (name it tf/idf, BM25 or whatever) with a boost on most recent documents. Going through the list of available functions one can see that  <code>recip</code> function (<a href="https://solr.apache.org/guide/8_9/function-queries.html#recip-function">https://solr.apache.org/guide/8_9/function-queries.html#recip-function</a>) is suited for this feature. Actually one of the syntax examples does just that</p>
+<p>A pretty common requirement on search results ranking is to combine the absolute relevancy of results (name it <code>tf/idf</code>, <code>BM25</code> or whatever) with a boost on most recent documents. Going through the list of available functions, one can see that  <code>recip</code> function (<a href="https://solr.apache.org/guide/8_9/function-queries.html#recip-function">https://solr.apache.org/guide/8_9/function-queries.html#recip-function</a>) is suited for this feature. Actually one of the syntax examples does just that</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1697,7 +1697,7 @@
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="n">recip</span><span class="o">(</span><span class="n">rord</span> <span class="o">(</span><span class="n">creationDate</span><span class="o">),</span> <span class="n">1</span><span class="o">,</span><span class="n">1000</span><span class="o">,</span><span class="n">1000</span><span class="o">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>In order to combine the score of this function with the default relevancy score you must go a bit more complex and have the following on your <code>sortBy</code> param</p>
+</div><p>In order to combine the score of this function with the default relevancy score, you must go a bit more complex and have the following on your <code>sortBy</code> param</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1706,7 +1706,7 @@
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">{!</span><span class="n">func</span><span class="o">}</span><span class="n">product</span><span class="o">(</span><span class="n">query</span><span class="o">({!</span><span class="n">qtree</span> <span class="n">v</span><span class="o">=</span><span class="n">$q</span><span class="o">}),</span> <span class="n">recip</span><span class="o">(</span><span class="n">rord</span> <span class="o">(</span><span class="n">creationDate</span><span class="o">),</span> <span class="n">1</span><span class="o">,</span><span class="n">1000</span><span class="o">,</span><span class="n">1000</span><span class="o">))</span> <span class="n">DESC</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>If you split it like below</p>
+</div><p>If you split it like shown here</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1728,15 +1728,11 @@
 <h2 id="diving-into-the-details">Diving into the details</h2>
 <p>Let&rsquo;s take a step back though and check how <code>recip</code> works. Quoting from the official Solr documentation page we have</p>
 <blockquote>
-<p>recip(x,m,a,b) performs a reciprocal function with recip(x,m,a,b) implementing a/(m*x+b) where m,a,b are constants, and x is any arbitrarily complex function.</p>
+<p>recip(x,m,a,b) performs a reciprocal function with recip(x,m,a,b) implementing a/(m*x+b) where m,a,b are constants, and x is any arbitrarily complex function.<br />
+When a and b are equal, and x&gt;=0, this function has a maximum value of 1 that drops as x increases. Increasing the value of a and b together results in a movement of the entire function to a flatter part of the curve.<br />
+These properties can make this an ideal function for boosting more recent documents when x is rord(datefield).</p>
 </blockquote>
-<blockquote>
-<p>When a and b are equal, and x&gt;=0, this function has a maximum value of 1 that drops as x increases. Increasing the value of a and b together results in a movement of the entire function to a flatter part of the curve.</p>
-</blockquote>
-<blockquote>
-<p>These properties can make this an ideal function for boosting more recent documents when x is rord(datefield).</p>
-</blockquote>
-<p>The above gives us enough information on why <code>rord(creationDate)</code> is required in <code>recip(rord (creationDate), 1,1000,1000)</code>. The output of <code>recip</code> decreases as x ( or in our case <code>rord(creationDate)</code>) increases. Since we want to penalize older dates we need to get higher values for those. This is ensured by <code>rord</code> which stands for reverse ordering.  Therefore, the older the date, the greater the value of <code>rord()</code> and the smaller the value of <code>recip</code> which is always in the [0,1] range.</p>
+<p>The above gives us enough information on why <code>rord(creationDate)</code> is required in <code>recip(rord (creationDate), 1,1000,1000)</code>. The output of <code>recip</code> decreases as x ( or in our case <code>rord(creationDate)</code>) increases. Since we want to penalize older dates we need to get bigger values for those. This is ensured by <code>rord</code> which stands for reverse ordering.  Therefore, the older the date, the greater the value of <code>rord()</code> and the smaller the value of <code>recip</code> which is always in the [0,1] range.</p>
 <p>If we have 3 documents in the index with 3 different dates we&rsquo;d have the following output for <code>rord</code></p>
 <table>
 <thead>
@@ -1790,7 +1786,7 @@
 </table>
 <p>The <code>rord()</code> function is applied on each shard separately. Therefore, since we have a single document in each shard, each of the documents will get value 1 assigned. Bottom line is that we don&rsquo;t get comparable values between shards. In practice this might not be an issue because one can assume that you have similar distribution of dates across shards. Still, I would not consider this a bullet-proof approach. We might have to deal with skewed shards in terms of dates contained in it or cases where documents are routed to shards based on <code>creationDate</code>.</p>
 <h2 id="going-in-another-direction">Going in another direction</h2>
-<p>In order to have a valid solution we need to have comparable values across shards. One way to do this is as described inside Solr&rsquo;s <code>ReciprocalFloatFunction</code> (which is the code behind the <code>recip</code> function query), quoting</p>
+<p>In order to have a valid solution we need to have comparable values across shards. One way to do this is described in Solr&rsquo;s <code>ReciprocalFloatFunction</code> (which is the code behind the <code>recip</code> function query). Quoting from the JavaDoc</p>
 <blockquote>
 <p>These properties make this an idea function for boosting more recent documents.<br />
 Example: recip(ms(NOW,mydatefield),3.16e-11,1,1)<br />
@@ -1817,7 +1813,7 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 <span class="n">DESC</span> 
 </code></pre></td></tr></table>
 </div>
-</div><p><code>DateDistance</code> returns the difference between the 2 dates in days. The 0.0027 equals to 1/365 since we are now converting days to years instead of ms to years as described in the JavaDoc. A sample <code>DateDistance</code> implementation follows</p>
+</div><p><code>DateDistance</code> returns the difference between the 2 dates in days. The 0.0027 equals 1/365, since we are now converting days to years instead of ms to years as described in the JavaDoc. A sample <code>DateDistance</code> implementation follows</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1934,7 +1930,7 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 </tbody>
 </table>
 <h2 id="a-new-door-is-now-wide-open">A new door is now wide open</h2>
-<p>Turns out you can compare almost everything using a custom <code>StrDistance</code> implementation. Say you want to get back from your search engine similar documents to the one you are viewing now, or in other words content-based recommendations. You apply your Machine learning magic and produce a vector representation for each document that is stored in the index in JSON format. Then, on query time you apply cosine similarity between the vectors in order to find the most closely related to the original one. One possible implementation of <code>StringDistance</code>  could be the following</p>
+<p>Turns out you can compare almost everything using a custom <code>StrDistance</code> implementation. Say you want to get back from your search engine similar documents to the one you are viewing now, or in other words content-based recommendations. You apply your Machine learning magic and produce a vector representation for each document that is stored in the index in JSON format. This is usually an array of floats or doubles. Then, on query time you apply cosine similarity between the vectors in order to find the most closely related to the original one. One possible implementation of <code>StringDistance</code>  could be the following</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -1986,7 +1982,7 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 			<span class="n">normTarget</span> <span class="o">+=</span> <span class="n">normTarget</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">*</span> <span class="n">normTarget</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
         <span class="o">}</span>
 		
-        <span class="k">return</span> <span class="n">score</span> <span class="o">/</span> <span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">sqrt</span><span class="o">(</span><span class="n">normSrc</span><span class="o">)</span> <span class="o">*</span> <span class="n">Math</span><span class="o">.</span><span class="na">sqrt</span><span class="o">(</span><span class="n">normTarget</span><span class="o">));</span>
+        <span class="k">return</span> <span class="n">score</span> <span class="o">/</span> <span class="o">(</span><span class="kt">float</span><span class="o">)(</span><span class="n">Math</span><span class="o">.</span><span class="na">sqrt</span><span class="o">(</span><span class="n">normSrc</span><span class="o">)</span> <span class="o">*</span> <span class="n">Math</span><span class="o">.</span><span class="na">sqrt</span><span class="o">(</span><span class="n">normTarget</span><span class="o">));</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></td></tr></table>
@@ -2055,12 +2051,12 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 	<span class="o">}</span>
 
 	<span class="nd">@Test</span>
-	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">test_similarity_one_common_id</span><span class="o">()</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">test_similarity_all_common_ids</span><span class="o">()</span> <span class="o">{</span>
 		<span class="n">String</span> <span class="n">doc1</span> <span class="o">=</span> <span class="s">&#34;[0.5]&#34;</span><span class="o">;</span>
 		<span class="n">String</span> <span class="n">doc2</span> <span class="o">=</span> <span class="s">&#34;[0.5]&#34;</span><span class="o">;</span>
 
 		<span class="kt">float</span> <span class="n">similarity</span> <span class="o">=</span> <span class="n">distanceFunction</span><span class="o">.</span><span class="na">getDistance</span><span class="o">(</span><span class="n">doc1</span><span class="o">,</span> <span class="n">doc2</span><span class="o">);</span>
-		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;Distance should be 1.0f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">1</span><span class="o">.</span><span class="na">0f</span><span class="o">);</span>
+		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;Similarity should be 1.0f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">1</span><span class="o">.</span><span class="na">0f</span><span class="o">);</span>
 	<span class="o">}</span>
 
 	<span class="nd">@Test</span>
@@ -2069,7 +2065,7 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 		<span class="n">String</span> <span class="n">doc2</span> <span class="o">=</span> <span class="s">&#34;[0.5, 0.9, 0.0]&#34;</span><span class="o">;</span>
 
 		<span class="kt">float</span> <span class="n">similarity</span> <span class="o">=</span> <span class="n">distanceFunction</span><span class="o">.</span><span class="na">getDistance</span><span class="o">(</span><span class="n">doc1</span><span class="o">,</span> <span class="n">doc2</span><span class="o">);</span>
-		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;similarity should be 0.4855f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">0</span><span class="o">.</span><span class="na">485f</span><span class="o">);</span>
+		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;Similarity should be 0.4855f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">0</span><span class="o">.</span><span class="na">485f</span><span class="o">);</span>
 	<span class="o">}</span>
 
 	<span class="nd">@Test</span>
@@ -2079,7 +2075,7 @@ A multiplier of 3.16e-11 changes the units from milliseconds to years (since the
 
 		<span class="kt">float</span> <span class="n">similarity</span> <span class="o">=</span> <span class="n">distanceFunction</span><span class="o">.</span><span class="na">getDistance</span><span class="o">(</span><span class="n">doc1</span><span class="o">,</span> <span class="n">doc2</span><span class="o">);</span>
 
-		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;similarity should be 0.0f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">0</span><span class="o">.</span><span class="na">0f</span><span class="o">);</span>
+		<span class="n">assertFloatEquality</span><span class="o">(</span><span class="s">&#34;Similarity should be 0.0f&#34;</span><span class="o">,</span> <span class="n">similarity</span><span class="o">,</span> <span class="n">0</span><span class="o">.</span><span class="na">0f</span><span class="o">);</span>
 	<span class="o">}</span>
 
 	<span class="kd">private</span> <span class="kt">void</span> <span class="nf">assertFloatEquality</span><span class="o">(</span><span class="n">String</span> <span class="n">msg</span><span class="o">,</span> <span class="kt">float</span> <span class="n">actual</span><span class="o">,</span> <span class="kt">float</span> <span class="n">expected</span><span class="o">){</span> 	       <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="n">msg</span><span class="o">,</span> <span class="n">expected</span><span class="o">,</span> <span class="n">actual</span><span class="o">,</span> <span class="n">FLOAT_DELTA</span><span class="o">);</span>

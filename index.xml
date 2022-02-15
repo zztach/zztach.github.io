@@ -50,7 +50,7 @@
         <atom:modified>Tue, 15 Feb 2022 12:00:06 +0900</atom:modified>
         <guid>https://www.zisistach.org/posts/solr-function-playground/</guid>
         <description>Introduction One of the most interesting Solr features is definitely &amp;ldquo;Function Queries&amp;rdquo;. They allow you to dynamically alter the ranking of your documents, by applying functions on existing index fields. More details and a complete list of the available functions are documented at https://solr.apache.org/guide/8_9/function-queries.html
-Use case - Boost recent documents A pretty common requirement on search ranking is to combine the absolute relevancy of results (name it tf/idf, BM25 or whatever) with a boost on most recent documents.</description>
+Use case - Boost recent documents A pretty common requirement on search results ranking is to combine the absolute relevancy of results (name it tf/idf, BM25 or whatever) with a boost on most recent documents.</description>
         
         <dc:creator>Zisis</dc:creator>
         <media:content url="https://www.zisistach.orgimages/article-icons/1-function.png" medium="image"><media:title type="html">featured image</media:title></media:content>
